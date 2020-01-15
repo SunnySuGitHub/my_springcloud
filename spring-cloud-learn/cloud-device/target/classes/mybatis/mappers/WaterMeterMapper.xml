@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cloud.device.Dao.WaterMeterMapper">
+    <!--mapper接口所在包-->
+
+    <select id="getWaterMeterDetail" resultType="com.cloud.device.Entity.Watermeter">
+        select
+          *
+        from
+          t_watermeter
+        where
+          meter_no = #{meterNo}
+          and enprNo = #{enprNo}
+          and is_delete = 0
+    </select>
+
+    <select id="getAllWaterMeterDetail" resultType="com.cloud.device.Entity.Watermeter">
+        select
+        *
+        from
+        t_watermeter
+        where
+        enprNo = #{enprNo}
+        and is_delete = 0
+        <if test="state !=-1">and state = #{state}</if>
+    </select>
+
+    <select id="findAll" resultType="com.cloud.device.Entity.Watermeter">
+        select
+          *
+        from
+          t_watermeter
+        where
+          is_delete = 0
+    </select>
+
+    <update id="uptWatermeterValue" parameterType="com.cloud.device.Entity.Watermeter">
+        update
+          t_watermeter
+        set
+          read_time = #{readTime},
+          read_value = #{readValue},
+          pre_read_time = #{preReadTime},
+          pre_read_value = #{preReadValue},
+          month_amount = #{monthAmount},
+          state = #{state},
+          is_update = #{isUpdate}
+        where
+          watermeter_id = #{watermeterId}
+          and is_delete = 0
+    </update>
+
+    <insert id="saveMeter" parameterType="com.cloud.device.Entity.Watermeter">
+        insert into
+          t_watermeter(
+            meter_no,
+            u_id,
+            c_id,
+            caliber,
+            install_time,
+            read_time,
+            read_value,
+            pre_read_time,
+            pre_read_value,
+            month_amount,
+            meter_type,
+            valve,
+            state,
+            enprNo
+          ) values (
+            #{ammeterNo},
+            #{uId},
+            #{cId},
+            #{caliber},
+            #{installTime},
+            #{readTime},
+            #{readValue},
+            #{preReadTime},
+            #{preReadValue},
+            #{monthAmount},
+            #{meterType},
+            #{valve},
+            #{state},
+            #{enprNo}
+          )
+    </insert>
+
+    <select id="findAllWatermeterNoByEnprNo" resultType="java.lang.String">
+        select
+          distinct meter_no
+        from
+          t_watermeter
+        where
+          enprNo = #{enprNo}
+          and is_delete = 0
+    </select>
+
+    <select id="findFailedWatermeter" resultType="com.cloud.device.Entity.Watermeter">
+        select
+          *
+        from
+          t_watermeter
+        where
+          is_delete = 0
+          and c_id = #{cid}
+          and state = 1
+    </select>
+
+    <select id="findWatermeterByUid" resultType="com.cloud.device.Entity.Watermeter">
+        select
+          *
+        from
+          t_watermeter
+        where
+          is_delete = 0
+          and u_id = #{uid}
+    </select>
+
+    <update id="monthlyRefresh">
+        update
+          t_watermeter
+        set
+          month_amount = 0
+    </update>
+
+    <update id="dailyRefresh">
+        update
+          t_watermeter
+        set
+          is_update = 0;
+    </update>
+
+    <update id="delete">
+        update
+          t_watermeter
+        set
+          is_update = 1
+        where
+          meter_no = #{ammeterNo}
+          and enprNo = #{enprNo}
+    </update>
+
+    <select id="getWatermeterByCenter" resultType="com.cloud.device.Entity.Watermeter">
+        select
+          *
+        from
+          t_watermeter
+        where
+          center_id = #{centerId}
+          and is_delete = 0
+    </select>
+
+</mapper>

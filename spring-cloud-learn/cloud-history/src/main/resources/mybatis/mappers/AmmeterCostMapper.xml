@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cloud.history.Dao.AmmeterCostMapper">
+    <!--mapper接口所在包-->
+
+    <select id="getAmmeterTotalDailyCost" resultType="com.cloud.history.Entity.VO.MeterDailyCost">
+        select
+          cost_money as daily_cost,
+          cost_date as dateline,
+          1 as water_type
+        from
+          t_ammeter_cost
+        where
+          ammeter_no = #{meterNo}
+          and enprNo = #{enprNo}
+    </select>
+
+  <select id="getAmmeterSharpDailyCost" resultType="com.cloud.history.Entity.VO.MeterDailyCost">
+        select
+          sharp_usage as daily_cost,
+          sharp_cost as dateline,
+          1 as water_type
+        from
+          t_ammeter_cost
+        where
+          ammeter_no = #{meterNo}
+          and enprNo = #{enprNo}
+    </select>
+
+  <select id="getAmmeterPeekDailyCost" resultType="com.cloud.history.Entity.VO.MeterDailyCost">
+        select
+          peek_usage as daily_cost,
+          peek_cost as dateline,
+          1 as water_type
+        from
+          t_ammeter_cost
+        where
+          ammeter_no = #{meterNo}
+          and enprNo = #{enprNo}
+    </select>
+
+  <select id="getAmmeterFlatDailyCost" resultType="com.cloud.history.Entity.VO.MeterDailyCost">
+        select
+          flat_usage as daily_cost,
+          flat_cost as dateline,
+          1 as water_type
+        from
+          t_ammeter_cost
+        where
+          ammeter_no = #{meterNo}
+          and enprNo = #{enprNo}
+    </select>
+
+  <select id="getAmmeterLowDailyCost" resultType="com.cloud.history.Entity.VO.MeterDailyCost">
+        select
+          low_usage as daily_cost,
+          low_cost as dateline,
+          1 as water_type
+        from
+          t_ammeter_cost
+        where
+          ammeter_no = #{meterNo}
+          and enprNo = #{enprNo}
+    </select>
+
+    <insert id="save" parameterType="com.cloud.history.Entity.Ammeters.AmmeterCost">
+        insert into
+          t_ammeter_cost(
+            u_id,
+            ammeter_usage,
+            cost_money,
+            sharp_usage,
+            sharp_cost,
+            peek_usage,
+            peek_cost,
+            flat_usage,
+            flat_cost,
+            low_usage,
+            low_cost,
+            cost_date,
+            cost_time,
+            ammeter_no,
+            enprNo
+          ) values (
+            #{uId},
+            #{ammeterUsage},
+            #{costMoney},
+            #{sharpUsage},
+            #{sharpCost},
+            #{peekUsage},
+            #{peekCost},
+            #{flatUsage},
+            #{flatCost},
+            #{lowUsage},
+            #{lowCost},
+            #{costDate},
+            #{costTime},
+            #{ammeterNo},
+            #{enprNo}
+          )
+    </insert>
+
+</mapper>

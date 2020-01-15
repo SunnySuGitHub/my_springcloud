@@ -1,9 +1,9 @@
 package com.cloud.consumer;
 
-import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
+import com.codingapi.txlcn.tc.annotation.LcnTransaction;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.web.client.RestTemplate;
+import org.springframework.transaction.annotation.Transactional;
 
 /**
  * Created by wei.li
@@ -13,16 +13,20 @@ import org.springframework.web.client.RestTemplate;
 @Service
 public class HelloService {
 
+//    @Autowired
+//    RestTemplate restTemplate;
+
     @Autowired
-    RestTemplate restTemplate;
+    ClientService clientService;
 
-    @HystrixCommand(fallbackMethod = "error")
-    public String hello(String name){
-        return restTemplate.getForObject("http://CLOUD-SERVICE/hello?name="+name, String.class);
+    @LcnTransaction //分布式事务注解
+    @Transactional  //本地事务注解
+    public String hello(String name) throws Exception{
+//        return restTemplate.getForObject("http://CLOUD-DEVICE/hello?name="+name, String.class);
+//        return clientService.test(name);
+        return name;
+//        throw new Exception("error");
     }
 
-    public String error(String name){
-        return "sorry, error";
-    }
 }
 

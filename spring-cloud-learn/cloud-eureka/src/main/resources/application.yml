@@ -5,8 +5,11 @@ eureka:
     instance:
         hostname: localhost
     client:
-        serviceUrl:
-            defaultZone: http://localhost2:8082/eureka/
+        register-with-eureka: false
+        fetch-registry: false
+#    client:
+#        serviceUrl:
+#            defaultZone: http://localhost2:8082/eureka/
 
 spring:
     application:

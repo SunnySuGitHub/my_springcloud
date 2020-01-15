@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cloud.history.Dao.AmmeterHistoryMapper">
+    <!--mapper接口所在包-->
+
+    <select id="getAmmeterHistorydata" resultType="com.cloud.history.Entity.Ammeters.AmmeterHistorydata">
+        select
+          ammeter_no,
+          read_value,
+          read_time,
+          read_type,
+          enprNo
+        from
+          t_ammeter_historydata
+        where
+          meter_no = #{ammeterNo}
+          and enprNo = #{enprNo}
+          and read_type = #{readType}
+        <if test="startLine !=-1">
+            <![CDATA[
+            and read_time >= #{startLine}
+            ]]>
+        </if>
+        <if test="endLine !=-1">
+            <![CDATA[
+            and read_time <= #{endLine}
+            ]]>
+        </if>
+    </select>
+
+</mapper>

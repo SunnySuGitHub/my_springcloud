@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cloud.files.Dao.UserMapper">
+    <!--mapper接口所在包-->
+
+    <select id="findAllUsers" resultType="com.cloud.files.Entity.User">
+        SELECT
+          *
+        FROM
+          t_user
+        where
+          enprNo = #{enprNo}
+          and is_delete = 0
+    </select>
+
+    <select id="findByUid" resultType="com.cloud.files.Entity.User">
+        SELECT
+          *
+        FROM
+          t_user
+        where
+          u_id = #{uid}
+          and is_delete = 0
+    </select>
+
+    <select id="findTotalUser" resultType="com.cloud.files.Entity.User">
+        SELECT
+          *
+        FROM
+          t_user
+        where
+          is_delete = 0
+    </select>
+
+    <insert id="saveUser" parameterType="com.cloud.files.Entity.User" useGeneratedKeys="true" keyProperty="uId">
+        insert into
+          t_user(
+            u_name,
+            u_tel,
+            b_id,
+            address,
+            account_balance,
+            enprNo
+          ) values (
+            #{uName},
+            #{uTel},
+            #{bId},
+            #{address},
+            #{accountBalance},
+            #{enprNo}
+          )
+    </insert>
+
+    <update id="delUserByUid" parameterType="java.lang.Integer">
+        update
+          t_user
+        set
+          is_delete = 1
+        where
+          u_id = #{uid}
+    </update>
+
+    <update id="uptUser" parameterType="com.cloud.files.Entity.User">
+        update
+          t_user
+        <set>
+            <if test="uName !=null"> ,u_name = #{uName}</if>
+            <if test="uTel !=null"> ,u_tel = #{uTel}</if>
+            <if test="bId !=null"> ,b_id = #{bId}</if>
+            <if test="address !=null"> ,address = #{address}</if>
+            <if test="accountBalance !=null"> ,account_balance = #{accountBalance}</if>
+            <if test="enprNo !=null"> ,enprNo = #{enprNo}</if>
+        </set>
+        where
+          u_id = #{uId}
+          and is_delete = 0
+    </update>
+
+    <select id="findUidsByBid" resultType="java.lang.Integer" parameterType="java.lang.Integer">
+        select
+          u_id
+        from
+          t_user
+        where
+          b_id = #{bId}
+          and is_delete = 0
+    </select>
+
+    <select id="findUidsByUname" resultType="java.lang.Integer">
+        select
+          u_id
+        from
+          t_user
+        where
+          u_name = #{uname}
+          and enprNo = #{enprNo}
+    </select>
+
+    <select id="findByUnameAndTelAndEnprNo" resultType="com.cloud.files.Entity.User">
+        select
+          *
+        from
+          t_user
+        where
+          u_name = #{uName}
+          and u_tel = #{tel}
+          and enprNo = #{enprNo}
+          and is_delete = 0
+    </select>
+
+</mapper>

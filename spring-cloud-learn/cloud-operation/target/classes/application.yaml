@@ -1,0 +1,11 @@
+server:
+  port: 9999
+
+spring:
+  application:
+    name: cloud-operation
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8081/eureka/

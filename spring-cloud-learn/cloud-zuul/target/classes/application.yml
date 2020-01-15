@@ -9,9 +9,41 @@ spring:
     name: cloud-zuul
 zuul:
   routes:
+    #示例
     api-a:
       path: /api-a/**
       serviceId: cloud-service
-    api-b:
-      path: /api-b/**
-      serviceId: cloud-service2
+
+    #区域管理
+    api-area:
+      path: /api-area/**
+      serviceId: cloud-area
+
+    #设备管理
+    api-device:
+      path: /api-device/**
+      serviceId: cloud-device
+
+    #档案管理
+    api-files:
+      path: /api-files/**
+      serviceId: cloud-files
+
+    #统计报表管理
+    api-history:
+      path: /api-history/**
+      serviceId: cloud-history
+
+    #运营管理
+    api-operation:
+      path: /api-operation/**
+      serviceId: cloud-operation
+
+    #系统管理
+    api-setting:
+      path: /api-setting/**
+      serviceId: cloud-setting
+
+    api-consumer:
+      path: /api-consumer/**
+      serviceId: cloud-consumer

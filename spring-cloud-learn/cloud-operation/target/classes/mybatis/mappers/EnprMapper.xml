@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cloud.operation.Dao.EnprMapper">
+    <!--mapper接口所在包-->
+
+    <select id="findByEnprNo" resultType="com.cloud.operation.Entity.Enpr">
+        select
+          *
+        from
+          t_enterprise
+        where
+          enprNo = #{enprNo}
+    </select>
+
+</mapper>

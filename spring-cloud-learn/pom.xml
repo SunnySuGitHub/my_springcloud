@@ -13,13 +13,14 @@
         <module>cloud-eureka</module>
         <module>cloud-service</module>
         <module>cloud-consumer</module>
-        <module>cloud-consumer-feign</module>
         <module>cloud-zuul</module>
-        <module>cloud-service2</module>
-        <module>cloud-config</module>
-        <module>cloud-config-client</module>
-        <module>cloud-gateway</module>
-        <module>cloud-predict</module>
+        <module>cloud-history</module>
+        <module>cloud-device</module>
+        <module>cloud-setting</module>
+        <module>cloud-files</module>
+        <module>cloud-operation</module>
+        <module>cloud-area</module>
+        <module>cloud-task</module>
     </modules>
 
     <parent>
@@ -51,6 +52,12 @@
                 <version>${spring-cloud.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>fastjson</artifactId>
+                <version>1.2.43</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

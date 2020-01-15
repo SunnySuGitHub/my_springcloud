@@ -27,7 +27,7 @@ public class ServiceApplication {
 
     @RequestMapping("hello")
     public String hello(@RequestParam(value = "name", defaultValue = "forwei") String name){
-        return "hello" + name + ", i am from port:" + port;
+        return "hello" + name + ", i am from service:" + port;
     }
 
 }

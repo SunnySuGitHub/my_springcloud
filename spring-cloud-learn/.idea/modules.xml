@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/cloud-area/cloud-area.iml" filepath="$PROJECT_DIR$/cloud-area/cloud-area.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-consumer/cloud-consumer.iml" filepath="$PROJECT_DIR$/cloud-consumer/cloud-consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-device/cloud-device.iml" filepath="$PROJECT_DIR$/cloud-device/cloud-device.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-eureka/cloud-eureka.iml" filepath="$PROJECT_DIR$/cloud-eureka/cloud-eureka.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-files/cloud-files.iml" filepath="$PROJECT_DIR$/cloud-files/cloud-files.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-history/cloud-history.iml" filepath="$PROJECT_DIR$/cloud-history/cloud-history.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-operation/cloud-operation.iml" filepath="$PROJECT_DIR$/cloud-operation/cloud-operation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-service/cloud-service.iml" filepath="$PROJECT_DIR$/cloud-service/cloud-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-setting/cloud-setting.iml" filepath="$PROJECT_DIR$/cloud-setting/cloud-setting.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-task/cloud-task.iml" filepath="$PROJECT_DIR$/cloud-task/cloud-task.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-zuul/cloud-zuul.iml" filepath="$PROJECT_DIR$/cloud-zuul/cloud-zuul.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sping-cloud-learn.iml" filepath="$PROJECT_DIR$/sping-cloud-learn.iml" />
+    </modules>
+  </component>
+</project>
