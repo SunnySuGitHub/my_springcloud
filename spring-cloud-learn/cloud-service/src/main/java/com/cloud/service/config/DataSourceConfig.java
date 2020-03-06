@@ -1,10 +1,9 @@
-package com.cloud.consumer.config;
+package com.cloud.service.config;
 
 import org.apache.commons.dbcp.BasicDataSource;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.ImportResource;
 
 import javax.sql.DataSource;
 
@@ -18,8 +17,7 @@ public class DataSourceConfig {
     @Bean(name = "hydroDataSource")
     @Qualifier("hydroDataSource")
     public DataSource testDataSource() throws Exception {
-//        return getDataSource("jdbc:mysql://localhost:3306/db_common?useSSL=false&serverTimezone=GMT%2B8", "root", "19960731");
-        return getDataSource("jdbc:mysql://localhost:3306/hydro_electric?useSSL=false&serverTimezone=GMT%2B8", "root", "123456");
+        return getDataSource("jdbc:mysql://localhost:3306/db_common?useSSL=false&serverTimezone=GMT%2B8", "root", "19960731");
     }
 
     private DataSource getDataSource(String url, String username, String password){

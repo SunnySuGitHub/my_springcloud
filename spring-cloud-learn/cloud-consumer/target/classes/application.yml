@@ -7,6 +7,12 @@ server:
 spring:
   application:
     name: cloud-consumer
+  output:
+    ansi:
+      enabled: always
+logging:
+  pattern:
+    console: '%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level %logger{36} - %msg%n'
 
 
 

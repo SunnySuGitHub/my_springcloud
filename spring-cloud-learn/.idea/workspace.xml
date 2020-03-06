@@ -6,280 +6,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b894610d-8f1a-4ebc-b929-b5e59c6d845f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-area/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-area/src/main/java/com/cloud/area/Controller/AreaController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-area/src/main/java/com/cloud/area/Dao/BlockMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-area/src/main/java/com/cloud/area/Dao/CommunityMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-area/src/main/java/com/cloud/area/Entity/Block.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-area/src/main/java/com/cloud/area/Entity/Community.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-area/src/main/java/com/cloud/area/Service/BlockService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-area/src/main/java/com/cloud/area/Service/CommunityService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-area/src/main/java/com/cloud/area/config/DataSourceConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-area/src/main/resources/application.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-area/src/main/resources/mybatis/mappers/BlockMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-area/src/main/resources/mybatis/mappers/CommunityMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-area/src/main/resources/mybatis/mybatis-config.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-area/src/main/resources/spring/spring-dataSource.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-consumer/src/main/java/com/cloud/consumer/ClientService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-consumer/src/main/java/com/cloud/consumer/config/DataSourceConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-device/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-device/src/main/java/com/cloud/device/Controller/CenterController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-device/src/main/java/com/cloud/device/Controller/CommandController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-device/src/main/java/com/cloud/device/Controller/MeterController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-device/src/main/java/com/cloud/device/Dao/AmmeterMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-device/src/main/java/com/cloud/device/Dao/CenterMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-device/src/main/java/com/cloud/device/Dao/WaterMeterMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-device/src/main/java/com/cloud/device/DeviceApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-device/src/main/java/com/cloud/device/Entity/Ammeter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-device/src/main/java/com/cloud/device/Entity/Center.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-device/src/main/java/com/cloud/device/Entity/Watermeter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-device/src/main/java/com/cloud/device/Service/AmmeterService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-device/src/main/java/com/cloud/device/Service/CenterService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-device/src/main/java/com/cloud/device/Service/WaterMeterService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-device/src/main/java/com/cloud/device/config/DataSourceConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-device/src/main/java/com/cloud/device/utils/Constants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-device/src/main/java/com/cloud/device/utils/ExcelImportUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-device/src/main/java/com/cloud/device/utils/JedisUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-device/src/main/java/com/cloud/device/utils/ResponseHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-device/src/main/java/com/cloud/device/utils/TimeUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-device/src/main/java/com/cloud/device/utils/result/PageResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-device/src/main/java/com/cloud/device/utils/result/Result.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-device/src/main/java/com/cloud/device/utils/result/ResultData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-device/src/main/resources/application.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-device/src/main/resources/mybatis/mappers/AmmeterMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-device/src/main/resources/mybatis/mappers/CenterMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-device/src/main/resources/mybatis/mappers/WaterMeterMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-device/src/main/resources/mybatis/mybatis-config.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-device/src/main/resources/spring/spring-dataSource.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-files/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-files/src/main/java/com/cloud/files/Controller/ImportController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-files/src/main/java/com/cloud/files/Dao/AmmeterMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-files/src/main/java/com/cloud/files/Dao/BlockMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-files/src/main/java/com/cloud/files/Dao/TxTestMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-files/src/main/java/com/cloud/files/Dao/UserMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-files/src/main/java/com/cloud/files/Dao/WaterMeterMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-files/src/main/java/com/cloud/files/Entity/Ammeter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-files/src/main/java/com/cloud/files/Entity/Block.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-files/src/main/java/com/cloud/files/Entity/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-files/src/main/java/com/cloud/files/Entity/Watermeter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-files/src/main/java/com/cloud/files/FilesApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-files/src/main/java/com/cloud/files/Service/AmmeterService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-files/src/main/java/com/cloud/files/Service/BlockService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-files/src/main/java/com/cloud/files/Service/ExcelImport/AmmeterImportService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-files/src/main/java/com/cloud/files/Service/ExcelImport/ImportBase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-files/src/main/java/com/cloud/files/Service/ExcelImport/WaterImportService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-files/src/main/java/com/cloud/files/Service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-files/src/main/java/com/cloud/files/Service/WaterMeterService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-files/src/main/java/com/cloud/files/config/DataSourceConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-files/src/main/java/com/cloud/files/utils/Constants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-files/src/main/java/com/cloud/files/utils/ExcelImportUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-files/src/main/java/com/cloud/files/utils/JedisUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-files/src/main/java/com/cloud/files/utils/ResponseHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-files/src/main/java/com/cloud/files/utils/TimeUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-files/src/main/java/com/cloud/files/utils/result/PageResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-files/src/main/java/com/cloud/files/utils/result/Result.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-files/src/main/java/com/cloud/files/utils/result/ResultData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-files/src/main/resources/application.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-files/src/main/resources/mybatis/mappers/AmmeterMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-files/src/main/resources/mybatis/mappers/BlockMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-files/src/main/resources/mybatis/mappers/TxTestMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-files/src/main/resources/mybatis/mappers/UserMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-files/src/main/resources/mybatis/mappers/WaterMeterMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-files/src/main/resources/mybatis/mybatis-config.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-files/src/main/resources/spring/spring-dataSource.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-history/cloud-history.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-history/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-history/src/main/java/com/cloud/history/Dao/AmmeterCostMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-history/src/main/java/com/cloud/history/Dao/AmmeterHistoryMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-history/src/main/java/com/cloud/history/Dao/AmmeterUsageMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-history/src/main/java/com/cloud/history/Dao/WatermeterCostMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-history/src/main/java/com/cloud/history/Dao/WatermeterHistoryMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-history/src/main/java/com/cloud/history/Dao/WatermeterUsageMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-history/src/main/java/com/cloud/history/Entity/Ammeters/AmmeterCost.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-history/src/main/java/com/cloud/history/Entity/Ammeters/AmmeterHistorydata.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-history/src/main/java/com/cloud/history/Entity/Ammeters/AmmeterUsage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-history/src/main/java/com/cloud/history/Entity/VO/MeterDailyCost.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-history/src/main/java/com/cloud/history/Entity/VO/MeterDailyUsage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-history/src/main/java/com/cloud/history/Entity/VO/RunningDevice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-history/src/main/java/com/cloud/history/Entity/VO/UserDailyCostVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-history/src/main/java/com/cloud/history/Entity/VO/UserInfoVo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-history/src/main/java/com/cloud/history/Entity/Watermeters/WatermeterCost.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-history/src/main/java/com/cloud/history/Entity/Watermeters/WatermeterHistorydata.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-history/src/main/java/com/cloud/history/Entity/Watermeters/WatermeterUsage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-history/src/main/java/com/cloud/history/HistoryApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-history/src/main/java/com/cloud/history/Service/AmmeterServices/AmmeterCostService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-history/src/main/java/com/cloud/history/Service/AmmeterServices/AmmeterHistoryService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-history/src/main/java/com/cloud/history/Service/AmmeterServices/AmmeterUsageService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-history/src/main/java/com/cloud/history/Service/WatermeterServices/WatermeterCostService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-history/src/main/java/com/cloud/history/Service/WatermeterServices/WatermeterHistorydataService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-history/src/main/java/com/cloud/history/Service/WatermeterServices/WatermeterUsageService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-history/src/main/java/com/cloud/history/config/DataSourceConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-history/src/main/java/com/cloud/history/utils/Constants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-history/src/main/java/com/cloud/history/utils/ExcelImportUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-history/src/main/java/com/cloud/history/utils/JedisUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-history/src/main/java/com/cloud/history/utils/ResponseHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-history/src/main/java/com/cloud/history/utils/TimeUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-history/src/main/java/com/cloud/history/utils/result/PageResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-history/src/main/java/com/cloud/history/utils/result/Result.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-history/src/main/java/com/cloud/history/utils/result/ResultData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-history/src/main/resources/application.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-history/src/main/resources/mybatis/mappers/AmmeterCostMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-history/src/main/resources/mybatis/mappers/AmmeterHistoryMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-history/src/main/resources/mybatis/mappers/AmmeterUsageMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-history/src/main/resources/mybatis/mappers/WatermeterCostMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-history/src/main/resources/mybatis/mappers/WatermeterHistoryMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-history/src/main/resources/mybatis/mappers/WatermeterUsageMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-history/src/main/resources/mybatis/mybatis-config.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-history/src/main/resources/spring/spring-dataSource.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-operation/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-operation/src/main/java/com/cloud/operation/Controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-operation/src/main/java/com/cloud/operation/Dao/EnprMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-operation/src/main/java/com/cloud/operation/Dao/PayhistoryMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-operation/src/main/java/com/cloud/operation/Dao/UserMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-operation/src/main/java/com/cloud/operation/Entity/Enpr.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-operation/src/main/java/com/cloud/operation/Entity/Payhistory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-operation/src/main/java/com/cloud/operation/Entity/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-operation/src/main/java/com/cloud/operation/Entity/UserInfoVo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-operation/src/main/java/com/cloud/operation/Service/PayService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-operation/src/main/java/com/cloud/operation/Service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-operation/src/main/java/com/cloud/operation/Service/WechatpayService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-operation/src/main/java/com/cloud/operation/config/DataSourceConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-operation/src/main/java/com/cloud/operation/utils/Constants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-operation/src/main/java/com/cloud/operation/utils/ExcelImportUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-operation/src/main/java/com/cloud/operation/utils/JedisUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-operation/src/main/java/com/cloud/operation/utils/ResponseHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-operation/src/main/java/com/cloud/operation/utils/TimeUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-operation/src/main/java/com/cloud/operation/utils/WXConfigUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-operation/src/main/java/com/cloud/operation/utils/result/PageResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-operation/src/main/java/com/cloud/operation/utils/result/Result.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-operation/src/main/java/com/cloud/operation/utils/result/ResultData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-operation/src/main/resources/application.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-operation/src/main/resources/mybatis/mappers/EnprMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-operation/src/main/resources/mybatis/mappers/PayhistoryMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-operation/src/main/resources/mybatis/mappers/UserMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-operation/src/main/resources/mybatis/mybatis-config.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-operation/src/main/resources/spring/spring-dataSource.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-setting/cloud-setting.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-setting/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-setting/src/main/java/com/cloud/setting/Controller/ManagementController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-setting/src/main/java/com/cloud/setting/Controller/OperatorController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-setting/src/main/java/com/cloud/setting/Dao/AmmeterRateMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-setting/src/main/java/com/cloud/setting/Dao/EnprMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-setting/src/main/java/com/cloud/setting/Dao/LadderedElecpriceMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-setting/src/main/java/com/cloud/setting/Dao/LadderedWaterpriceMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-setting/src/main/java/com/cloud/setting/Dao/NoticeMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-setting/src/main/java/com/cloud/setting/Dao/OperatorMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-setting/src/main/java/com/cloud/setting/Dao/RepairMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-setting/src/main/java/com/cloud/setting/Entity/AmmeterRate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-setting/src/main/java/com/cloud/setting/Entity/Enpr.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-setting/src/main/java/com/cloud/setting/Entity/LadderedElecprice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-setting/src/main/java/com/cloud/setting/Entity/LadderedWaterprice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-setting/src/main/java/com/cloud/setting/Entity/Notice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-setting/src/main/java/com/cloud/setting/Entity/Operator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-setting/src/main/java/com/cloud/setting/Entity/Repair.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-setting/src/main/java/com/cloud/setting/Service/EnprService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-setting/src/main/java/com/cloud/setting/Service/LadderPriceService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-setting/src/main/java/com/cloud/setting/Service/NoticeService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-setting/src/main/java/com/cloud/setting/Service/OperatorService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-setting/src/main/java/com/cloud/setting/Service/RateService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-setting/src/main/java/com/cloud/setting/Service/RepairService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-setting/src/main/java/com/cloud/setting/SettingApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-setting/src/main/java/com/cloud/setting/config/DataSourceConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-setting/src/main/java/com/cloud/setting/utils/Constants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-setting/src/main/java/com/cloud/setting/utils/ExcelImportUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-setting/src/main/java/com/cloud/setting/utils/JedisUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-setting/src/main/java/com/cloud/setting/utils/ResponseHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-setting/src/main/java/com/cloud/setting/utils/TimeUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-setting/src/main/java/com/cloud/setting/utils/TokenUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-setting/src/main/java/com/cloud/setting/utils/result/PageResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-setting/src/main/java/com/cloud/setting/utils/result/Result.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-setting/src/main/java/com/cloud/setting/utils/result/ResultData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-setting/src/main/resources/application.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-setting/src/main/resources/mybatis/mappers/AmmeterRateMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-setting/src/main/resources/mybatis/mappers/EnprMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-setting/src/main/resources/mybatis/mappers/LadderedElecpriceMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-setting/src/main/resources/mybatis/mappers/LadderedWaterpriceMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-setting/src/main/resources/mybatis/mappers/NoticeMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-setting/src/main/resources/mybatis/mappers/OperatorMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-setting/src/main/resources/mybatis/mappers/RepairMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-setting/src/main/resources/mybatis/mybatis-config.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-setting/src/main/resources/spring/spring-dataSource.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-task/cloud-task.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-task/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-task/src/main/java/com/cloud/task/Controller/ScheduleController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-task/src/main/java/com/cloud/task/ScheduledJob/DynamicSchedule/Config.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-task/src/main/java/com/cloud/task/ScheduledJob/DynamicSchedule/Jobs.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-task/src/main/java/com/cloud/task/ScheduledJob/DynamicSchedule/ScheduleTaskHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-task/src/main/java/com/cloud/task/ScheduledJob/DynamicSchedule/ScheduleUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-task/src/main/java/com/cloud/task/TaskApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-zuul/src/main/java/com/cloud/zuul/JedisUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-config-client/cloud-config-client.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-config-client/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-config-client/src/main/java/com/cloud/config/client/ConfigClientApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-config-client/src/main/resources/bootstrap.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-config-client/target/classes/bootstrap.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-config-client/target/classes/com/cloud/config/client/ConfigClientApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-config/cloud-config.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-config/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-config/src/main/java/com/cloud/config/ConfigApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-operation/src/main/java/com/cloud/operation/OperationApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-config/src/main/resources/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-config/target/classes/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-config/target/classes/com/cloud/config/ConfigApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-consumer-feign/cloud-consumer-feign.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-consumer-feign/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-consumer-feign/src/main/java/com/cloud/consumer/feign/FeignApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-consumer-feign/src/main/java/com/cloud/consumer/feign/HelloController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-consumer-feign/src/main/java/com/cloud/consumer/feign/HelloServiceHystric.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-consumer-feign/src/main/java/com/cloud/consumer/feign/IHelloService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-consumer-feign/src/main/resources/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-consumer-feign/target/classes/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-consumer-feign/target/classes/com/cloud/consumer/feign/FeignApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-consumer-feign/target/classes/com/cloud/consumer/feign/HelloController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-consumer-feign/target/classes/com/cloud/consumer/feign/HelloServiceHystric.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-consumer-feign/target/classes/com/cloud/consumer/feign/IHelloService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-consumer/cloud-consumer.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-consumer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-consumer/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-consumer/src/main/java/com/cloud/consumer/ConsumerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-consumer/src/main/java/com/cloud/consumer/ConsumerApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-consumer/src/main/java/com/cloud/consumer/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-consumer/src/main/java/com/cloud/consumer/HelloController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-consumer/src/main/java/com/cloud/consumer/DbMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-service/src/main/java/com/cloud/service/TxService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-service/src/main/java/com/cloud/service/config/DataSourceConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.txlcn/cloud-consumer-8083.mv.db" beforeDir="false" afterPath="$PROJECT_DIR$/.txlcn/cloud-consumer-8083.mv.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cloud-consumer/src/main/java/com/cloud/consumer/HelloService.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-consumer/src/main/java/com/cloud/consumer/HelloService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-consumer/target/classes/com/cloud/consumer/ConsumerApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-consumer/target/classes/com/cloud/consumer/ConsumerApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-consumer/target/classes/com/cloud/consumer/HelloController.class" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-consumer/target/classes/com/cloud/consumer/HelloController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-consumer/src/main/java/com/cloud/consumer/config/DataSourceConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-consumer/src/main/java/com/cloud/consumer/config/DataSourceConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-consumer/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-consumer/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-consumer/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-consumer/target/classes/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cloud-consumer/target/classes/com/cloud/consumer/HelloService.class" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-consumer/target/classes/com/cloud/consumer/HelloService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-eureka/cloud-eureka.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-eureka/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-eureka/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-eureka/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-eureka/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-eureka/target/classes/com/cloud/eureka/EurekaApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-eureka/target/classes/com/cloud/eureka/EurekaApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-gateway/cloud-gateway.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-gateway/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-gateway/src/main/java/com/cloud/gateway/GatewayApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-gateway/src/main/resources/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-gateway/target/classes/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-gateway/target/classes/com/cloud/gateway/GatewayApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-predict/cloud-predict.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-predict/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-predict/src/main/java/com/cloud/predict/PredictApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-predict/src/main/resources/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-predict/target/classes/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-predict/target/classes/com/cloud/predict/PredictApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-service/cloud-service.iml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-device/cloud-device.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-service/cloud-service.iml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-service/cloud-service.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-service/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cloud-service/src/main/java/com/cloud/service/ServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-service/src/main/java/com/cloud/service/ServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-service/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-service/target/classes/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cloud-service/target/classes/com/cloud/service/ServiceApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-service/target/classes/com/cloud/service/ServiceApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-service2/cloud-service2.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-service2/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-service2/src/main/java/com/cloud/service2/Service2Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-area/src/main/java/com/cloud/area/AreaApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-service2/src/main/resources/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-service2/target/classes/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-service2/target/classes/com/cloud/service2/Service2Application.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-zuul/cloud-zuul.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-zuul/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-zuul/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-zuul/src/main/java/com/cloud/zuul/MyFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-zuul/src/main/java/com/cloud/zuul/MyFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-zuul/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-zuul/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-zuul/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-zuul/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-zuul/target/classes/com/cloud/zuul/MyFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-zuul/target/classes/com/cloud/zuul/MyFilter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-zuul/target/classes/com/cloud/zuul/ZuulApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-zuul/target/classes/com/cloud/zuul/ZuulApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sping-cloud-learn.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sping-cloud-learn.iml" beforeDir="false" afterPath="$PROJECT_DIR$/sping-cloud-learn.iml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cloud-eureka/target/" />
     <ignored path="$PROJECT_DIR$/cloud-gateway/target/" />
@@ -300,6 +44,7 @@
     <ignored path="$PROJECT_DIR$/cloud-area/target/" />
     <ignored path="$PROJECT_DIR$/cloud-task/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -307,72 +52,113 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cloud-files/src/main/java/com/cloud/files/Controller/ImportController.java">
+      <file leaf-file-name="HelloController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cloud-consumer/src/main/java/com/cloud/consumer/HelloController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="24" column="14" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="14" />
+            <state relative-caret-position="396">
+              <caret line="21" column="40" selection-start-line="21" selection-start-column="40" selection-end-line="21" selection-end-column="40" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cloud-history/src/main/java/com/cloud/history/Controller/MeterController.java">
+      <file leaf-file-name="HelloService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cloud-consumer/src/main/java/com/cloud/consumer/HelloService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="29" column="14" selection-start-line="29" selection-start-column="14" selection-end-line="29" selection-end-column="14" />
+            <state relative-caret-position="220">
+              <caret line="15" column="27" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cloud-operation/src/main/java/com/cloud/operation/Controller/UserController.java">
+      <file leaf-file-name="DbMapper.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cloud-consumer/src/main/java/com/cloud/consumer/DbMapper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="31" column="38" selection-start-line="31" selection-start-column="38" selection-end-line="31" selection-end-column="38" />
+            <state relative-caret-position="220">
+              <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cloud-history/src/main/resources/mybatis/mybatis-config.xml">
+      <file leaf-file-name="DataSourceConfig.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cloud-consumer/src/main/java/com/cloud/consumer/config/DataSourceConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="15" selection-start-line="15" selection-end-line="15" />
+            <state relative-caret-position="330">
+              <caret line="21" column="126" selection-start-line="21" selection-start-column="126" selection-end-line="21" selection-end-column="126" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cloud-history/src/main/resources/spring/spring-dataSource.xml">
+      <file leaf-file-name="ClientService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cloud-consumer/src/main/java/com/cloud/consumer/ClientService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="16" column="11" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
+            <state>
+              <caret column="27" selection-start-column="27" selection-end-column="27" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/cloud-setting/src/main/java/com/cloud/setting/Controller/ManagementController.java">
+      <file leaf-file-name="ServiceApplication.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cloud-service/src/main/java/com/cloud/service/ServiceApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="28" selection-start-line="28" selection-end-line="28" />
+            <state relative-caret-position="528">
+              <caret line="35" column="32" selection-start-line="35" selection-start-column="32" selection-end-line="35" selection-end-column="32" />
+              <folding>
+                <element signature="e#1086#1087#0" expanded="true" />
+                <element signature="e#1125#1126#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cloud-setting/src/main/java/com/cloud/setting/Controller/OperatorController.java">
+      <file leaf-file-name="TxService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cloud-service/src/main/java/com/cloud/service/TxService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="23" column="36" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="36" />
+            <state relative-caret-position="264">
+              <caret line="14" column="26" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cloud-history/src/main/resources/mybatis/mappers/AmmeterCostMapper.xml">
-          <provider selected="true" editor-type-id="text-editor" />
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cloud-consumer/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1100">
+              <caret line="50" selection-start-line="50" selection-end-line="50" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="572">
+              <caret line="44" column="19" lean-forward="true" selection-start-line="44" selection-start-column="19" selection-end-line="44" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cloud-setting/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1122">
+              <caret line="51" selection-start-line="51" selection-end-line="51" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -385,26 +171,17 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>@Transactional  //本地事务注解</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/cloud-area/src/main/java/com/cloud/area/config/DataSourceConfig.java" />
-        <option value="$PROJECT_DIR$/cloud-area/src/main/java/com/cloud/area/Service/CommunityService.java" />
-        <option value="$PROJECT_DIR$/cloud-area/src/main/java/com/cloud/area/Service/BlockService.java" />
-        <option value="$PROJECT_DIR$/cloud-area/src/main/java/com/cloud/area/Controller/AreaController.java" />
-        <option value="$PROJECT_DIR$/cloud-area/src/main/java/com/cloud/area/AreaApplication.java" />
-        <option value="$PROJECT_DIR$/cloud-consumer/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/cloud-eureka/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/cloud-area/src/main/resources/application.yaml" />
-        <option value="$PROJECT_DIR$/cloud-device/src/main/resources/application.yaml" />
-        <option value="$PROJECT_DIR$/cloud-history/src/main/resources/application.yaml" />
-        <option value="$PROJECT_DIR$/cloud-operation/src/main/resources/application.yaml" />
-        <option value="$PROJECT_DIR$/cloud-setting/src/main/resources/application.yaml" />
-        <option value="$PROJECT_DIR$/cloud-zuul/pom.xml" />
-        <option value="$PROJECT_DIR$/cloud-zuul/src/main/java/com/cloud/zuul/JedisUtil.java" />
         <option value="$PROJECT_DIR$/cloud-setting/src/main/resources/mybatis/mappers/OperatorMapper.xml" />
         <option value="$PROJECT_DIR$/cloud-setting/src/main/java/com/cloud/setting/utils/TokenUtil.java" />
         <option value="$PROJECT_DIR$/cloud-setting/src/main/java/com/cloud/setting/Entity/Operator.java" />
@@ -424,32 +201,55 @@
         <option value="$PROJECT_DIR$/cloud-files/src/main/java/com/cloud/files/Service/BlockService.java" />
         <option value="$PROJECT_DIR$/cloud-files/src/main/java/com/cloud/files/Service/UserService.java" />
         <option value="$PROJECT_DIR$/cloud-files/src/main/resources/application.yaml" />
-        <option value="$PROJECT_DIR$/cloud-zuul/src/main/java/com/cloud/zuul/MyFilter.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/cloud-device/pom.xml" />
         <option value="$PROJECT_DIR$/cloud-device/src/main/java/com/cloud/device/DeviceApplication.java" />
         <option value="$PROJECT_DIR$/cloud-files/src/main/java/com/cloud/files/Controller/ImportController.java" />
         <option value="$PROJECT_DIR$/cloud-zuul/src/main/resources/application.yml" />
         <option value="F:/SpringCloudExamples/spring-cloud-zuul-filter/spring-cloud-zuul-filter/src/main/java/io/ymq/example/zuul/filter/PasswordFilter.java" />
-        <option value="$PROJECT_DIR$/cloud-consumer/src/main/java/com/cloud/consumer/ClientService.java" />
-        <option value="$PROJECT_DIR$/cloud-service/src/main/java/com/cloud/service/ServiceApplication.java" />
         <option value="$PROJECT_DIR$/cloud-files/src/main/java/com/cloud/files/FilesApplication.java" />
         <option value="$PROJECT_DIR$/cloud-consumer/src/main/java/com/cloud/consumer/HelloController.java" />
         <option value="$PROJECT_DIR$/cloud-consumer/pom.xml" />
-        <option value="$PROJECT_DIR$/cloud-consumer/src/main/java/com/cloud/consumer/config/DataSourceConfig.java" />
-        <option value="$PROJECT_DIR$/cloud-files/src/main/java/com/cloud/files/Service/ExcelImport/AmmeterImportService.java" />
         <option value="$PROJECT_DIR$/cloud-consumer/src/main/java/com/cloud/consumer/ConsumerApplication.java" />
-        <option value="$PROJECT_DIR$/cloud-consumer/src/main/java/com/cloud/consumer/HelloService.java" />
         <option value="$PROJECT_DIR$/cloud-files/pom.xml" />
         <option value="$PROJECT_DIR$/cloud-setting/src/main/java/com/cloud/setting/Controller/ManagementController.java" />
+        <option value="$PROJECT_DIR$/cloud-zuul/pom.xml" />
+        <option value="$PROJECT_DIR$/cloud-zuul/src/main/java/com/cloud/zuul/ZuulApplication.java" />
+        <option value="$PROJECT_DIR$/cloud-zuul/src/main/java/com/cloud/zuul/MyFilter.java" />
+        <option value="$PROJECT_DIR$/cloud-files/src/main/java/com/cloud/files/Service/ExcelImport/AmmeterImportService.java" />
+        <option value="$PROJECT_DIR$/cloud-files/src/main/java/com/cloud/files/Service/ExcelImport/ImportBase.java" />
+        <option value="$PROJECT_DIR$/cloud-files/src/main/java/com/cloud/files/Service/ExcelImport/WaterImportService.java" />
+        <option value="$PROJECT_DIR$/cloud-setting/src/main/java/com/cloud/setting/Controller/fn.java" />
+        <option value="$PROJECT_DIR$/cloud-setting/pom.xml" />
+        <option value="$PROJECT_DIR$/cloud-eureka/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/cloud-consumer/src/main/java/com/cloud/consumer/ClientService.java" />
+        <option value="$PROJECT_DIR$/cloud-service/src/main/java/com/cloud/service/ServiceApplication.java" />
+        <option value="$PROJECT_DIR$/cloud-service/pom.xml" />
+        <option value="$PROJECT_DIR$/cloud-consumer/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/cloud-service/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/cloud-consumer/src/main/java/com/cloud/consumer/DB.java" />
+        <option value="$PROJECT_DIR$/cloud-consumer/src/main/java/com/cloud/consumer/config/DataSourceConfig.java" />
+        <option value="$PROJECT_DIR$/cloud-consumer/src/main/java/com/cloud/consumer/DbService.java" />
+        <option value="$PROJECT_DIR$/cloud-consumer/src/main/java/com/cloud/consumer/DbMapper.java" />
+        <option value="$PROJECT_DIR$/cloud-service/src/main/java/com/cloud/service/TxService.java" />
+        <option value="$PROJECT_DIR$/cloud-consumer/src/main/java/com/cloud/consumer/HelloService.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="272" />
-    <option name="y" value="183" />
-    <option name="width" value="1296" />
-    <option name="height" value="1000" />
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -457,8 +257,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -469,7 +270,148 @@
             <path>
               <item name="sping-cloud-learn" type="b2602c69:ProjectViewProjectNode" />
               <item name="spring-cloud-learn" type="462c0819:PsiDirectoryNode" />
-              <item name="cloud-zuul" type="462c0819:PsiDirectoryNode" />
+              <item name="cloud-consumer" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sping-cloud-learn" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-cloud-learn" type="462c0819:PsiDirectoryNode" />
+              <item name="cloud-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sping-cloud-learn" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-cloud-learn" type="462c0819:PsiDirectoryNode" />
+              <item name="cloud-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sping-cloud-learn" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-cloud-learn" type="462c0819:PsiDirectoryNode" />
+              <item name="cloud-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sping-cloud-learn" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-cloud-learn" type="462c0819:PsiDirectoryNode" />
+              <item name="cloud-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="consumer" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sping-cloud-learn" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-cloud-learn" type="462c0819:PsiDirectoryNode" />
+              <item name="cloud-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sping-cloud-learn" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-cloud-learn" type="462c0819:PsiDirectoryNode" />
+              <item name="cloud-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sping-cloud-learn" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-cloud-learn" type="462c0819:PsiDirectoryNode" />
+              <item name="cloud-eureka" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sping-cloud-learn" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-cloud-learn" type="462c0819:PsiDirectoryNode" />
+              <item name="cloud-eureka" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sping-cloud-learn" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-cloud-learn" type="462c0819:PsiDirectoryNode" />
+              <item name="cloud-eureka" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sping-cloud-learn" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-cloud-learn" type="462c0819:PsiDirectoryNode" />
+              <item name="cloud-eureka" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sping-cloud-learn" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-cloud-learn" type="462c0819:PsiDirectoryNode" />
+              <item name="cloud-eureka" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="eureka" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sping-cloud-learn" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-cloud-learn" type="462c0819:PsiDirectoryNode" />
+              <item name="cloud-service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sping-cloud-learn" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-cloud-learn" type="462c0819:PsiDirectoryNode" />
+              <item name="cloud-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sping-cloud-learn" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-cloud-learn" type="462c0819:PsiDirectoryNode" />
+              <item name="cloud-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sping-cloud-learn" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-cloud-learn" type="462c0819:PsiDirectoryNode" />
+              <item name="cloud-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sping-cloud-learn" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-cloud-learn" type="462c0819:PsiDirectoryNode" />
+              <item name="cloud-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sping-cloud-learn" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-cloud-learn" type="462c0819:PsiDirectoryNode" />
+              <item name="cloud-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sping-cloud-learn" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-cloud-learn" type="462c0819:PsiDirectoryNode" />
+              <item name="cloud-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sping-cloud-learn" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-cloud-learn" type="462c0819:PsiDirectoryNode" />
+              <item name="cloud-setting" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -485,7 +427,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1576810443629" />
-    <property name="last_opened_file_path" value="G:/TencentFiles/499974664/FileReceive/fubt_batis1" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../tx-lcn/txlcn-tm" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -494,22 +436,22 @@
     <property name="settings.editor.selected.configurable" value="reference.settings.project.statistic.project.settings" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\springcloud\spring-cloud-learn\cloud-files\src\main\java\com\cloud\files" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.cloud.service.config" />
+      <recent name="com.cloud.consumer.config" />
+      <recent name="com.cloud.task.Controller" />
+      <recent name="com.cloud.task" />
+      <recent name="com.cloud.zuul" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="F:\springcloud\spring-cloud-learn\cloud-files\src\main\resources\mybatis\mappers" />
       <recent name="F:\springcloud\spring-cloud-learn\cloud-task\src\main\java\com\cloud\task" />
       <recent name="F:\springcloud\spring-cloud-learn\cloud-area\src\main\java\com\cloud\area\Service" />
       <recent name="F:\springcloud\spring-cloud-learn\cloud-area\src\main\java\com\cloud\area" />
       <recent name="F:\springcloud\spring-cloud-learn\cloud-area\src\main\java\com\cloud\area\Dao" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.cloud.consumer.config" />
-      <recent name="com.cloud.task.Controller" />
-      <recent name="com.cloud.task" />
-      <recent name="com.cloud.zuul" />
-      <recent name="com.cloud.area.Controller" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="F:\springcloud\spring-cloud-learn\cloud-files\src\main\java\com\cloud\files" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -524,7 +466,17 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.FilesApplication">
+  <component name="RunManager" selected="Spring Boot.ServiceApplication">
+    <configuration name="fn" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.cloud.setting.Controller.fn" />
+      <module name="cloud-setting" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.cloud.setting.Controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
     <configuration name="com.cloud.service in cloud-service" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="cloud-service" />
       <extension name="coverage">
@@ -533,45 +485,32 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="com.cloud.service" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="package" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AreaApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="cloud-area" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.cloud.area.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.cloud.area.AreaApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
     </configuration>
     <configuration name="ConfigApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="cloud-config" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.cloud.config.ConfigApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
     </configuration>
     <configuration name="ConfigClientApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="cloud-config-client" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.cloud.config.client.ConfigClientApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
     </configuration>
     <configuration name="ConsumerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="cloud-consumer" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.cloud.consumer.ConsumerApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
     </configuration>
     <configuration name="DeviceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="cloud-device" />
@@ -582,23 +521,14 @@
         </pattern>
       </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.cloud.device.DeviceApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
     </configuration>
     <configuration name="EurekaApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="cloud-eureka" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.cloud.eureka.EurekaApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
     </configuration>
     <configuration name="FeignApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="cloud-consumer-feign" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.cloud.consumer.feign.FeignApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
     </configuration>
     <configuration name="FilesApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="cloud-files" />
@@ -609,51 +539,34 @@
         </pattern>
       </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.cloud.files.FilesApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
     </configuration>
     <configuration name="GatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="cloud-gateway" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.cloud.gateway.GatewayApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    </configuration>
+    <configuration name="HistoryApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="cloud-history" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.cloud.history.HistoryApplication" />
     </configuration>
     <configuration name="OperationApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="cloud-operation" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.cloud.operation.OperationApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
     </configuration>
     <configuration name="PredictApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="cloud-predict" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.cloud.predict.PredictApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
     </configuration>
     <configuration name="Service2Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="cloud-service2" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.cloud.service2.Service2Application" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
     </configuration>
     <configuration name="ServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="cloud-service" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.cloud.service.ServiceApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
     </configuration>
     <configuration name="SettingApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="cloud-setting" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.cloud.setting.SettingApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
     </configuration>
     <configuration name="TaskApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="cloud-task" />
@@ -664,24 +577,38 @@
         </pattern>
       </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.cloud.task.TaskApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
     </configuration>
     <configuration name="ZuulApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="cloud-zuul" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.cloud.zuul.ZuulApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
     </configuration>
+    <list>
+      <item itemvalue="Spring Boot.ConfigApplication" />
+      <item itemvalue="Spring Boot.ConfigClientApplication" />
+      <item itemvalue="Spring Boot.ConsumerApplication" />
+      <item itemvalue="Spring Boot.EurekaApplication" />
+      <item itemvalue="Spring Boot.FeignApplication" />
+      <item itemvalue="Spring Boot.GatewayApplication" />
+      <item itemvalue="Spring Boot.OperationApplication" />
+      <item itemvalue="Spring Boot.PredictApplication" />
+      <item itemvalue="Spring Boot.Service2Application" />
+      <item itemvalue="Spring Boot.ServiceApplication" />
+      <item itemvalue="Spring Boot.SettingApplication" />
+      <item itemvalue="Spring Boot.ZuulApplication" />
+      <item itemvalue="Spring Boot.HistoryApplication" />
+      <item itemvalue="JUnit.com.cloud.service in cloud-service" />
+      <item itemvalue="Spring Boot.DeviceApplication" />
+      <item itemvalue="Spring Boot.FilesApplication" />
+      <item itemvalue="Spring Boot.TaskApplication" />
+      <item itemvalue="Application.fn" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.fn" />
         <item itemvalue="Spring Boot.FilesApplication" />
         <item itemvalue="JUnit.com.cloud.service in cloud-service" />
         <item itemvalue="Spring Boot.DeviceApplication" />
         <item itemvalue="Spring Boot.TaskApplication" />
-        <item itemvalue="Spring Boot.AreaApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -707,6 +634,21 @@
       <workItem from="1578380196919" duration="11000" />
       <workItem from="1578557939892" duration="6558000" />
       <workItem from="1578639389508" duration="1267000" />
+      <workItem from="1579102431465" duration="970000" />
+      <workItem from="1580290163639" duration="1792000" />
+      <workItem from="1580351038841" duration="3577000" />
+      <workItem from="1580521929647" duration="7872000" />
+      <workItem from="1580632789014" duration="4279000" />
+      <workItem from="1580695570395" duration="3296000" />
+      <workItem from="1580780563077" duration="3191000" />
+      <workItem from="1580877841455" duration="2049000" />
+      <workItem from="1581040460777" duration="1619000" />
+      <workItem from="1581213813106" duration="22000" />
+      <workItem from="1581992990335" duration="1917000" />
+      <workItem from="1582250234075" duration="44000" />
+      <workItem from="1582506463961" duration="10355000" />
+      <workItem from="1582617663041" duration="94000" />
+      <workItem from="1582632720669" duration="1208000" />
     </task>
     <servers />
   </component>
@@ -716,202 +658,58 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="71694000" />
+    <option name="totallyTimeSpent" value="82895000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14978679" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Designer" order="2" />
-      <window_info id="Image Layers" order="3" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50053304" side_tool="true" weight="0.28524947" />
+      <window_info anchor="right" id="Maven Projects" order="5" weight="0.32995737" />
+      <window_info anchor="bottom" id="Database Changes" order="13" />
       <window_info id="Capture Tool" order="4" />
+      <window_info id="Designer" order="2" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info id="Web" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946696" weight="0.22342733" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.31453362" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info id="Image Layers" order="3" />
+      <window_info anchor="bottom" id="Java Enterprise" order="12" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="bottom" id="Version Control" order="14" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946696" weight="0.22342733" />
       <window_info anchor="bottom" id="Spring" order="7" weight="0.329718" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.329718" />
-      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50053304" side_tool="true" weight="0.28524947" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.329718" />
-      <window_info anchor="bottom" id="Java Enterprise" order="12" />
-      <window_info anchor="bottom" id="Database Changes" order="13" />
-      <window_info anchor="bottom" id="Version Control" order="14" />
-      <window_info anchor="bottom" id="Statistic" order="15" weight="0.17462039" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" />
-      <window_info anchor="right" id="Palette" order="4" />
-      <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="Database" order="6" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15298508" />
       <window_info anchor="right" id="Bean Validation" order="9" />
+      <window_info id="Web" order="7" side_tool="true" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Statistic" order="15" weight="0.17462039" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.329718" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="right" id="Maven" order="3" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/cloud-files/src/main/java/com/cloud/files/Service/BlockService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#470#471#0" expanded="true" />
-            <element signature="e#538#539#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cloud-files/src/main/java/com/cloud/files/Service/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="37">
-          <caret line="2" column="33" selection-start-line="2" selection-start-column="33" selection-end-line="2" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cloud-files/src/main/java/com/cloud/files/Service/WaterMeterService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="5" column="39" selection-start-line="5" selection-start-column="39" selection-end-line="5" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cloud-files/src/main/java/com/cloud/files/Service/ExcelImport/WaterImportService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-693">
-          <caret line="9" column="43" lean-forward="true" selection-start-line="9" selection-start-column="43" selection-end-line="9" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cloud-eureka/src/main/java/com/cloud/eureka/EurekaApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cloud-eureka/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cloud-service/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cloud-zuul/src/main/java/com/cloud/zuul/MyFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
-          <caret line="39" column="20" selection-start-line="39" selection-start-column="20" selection-end-line="39" selection-end-column="20" />
-          <folding>
-            <element signature="e#777#778#0" expanded="true" />
-            <element signature="e#805#806#0" expanded="true" />
-            <element signature="e#926#927#0" expanded="true" />
-            <element signature="e#953#954#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cloud-zuul/src/main/java/com/cloud/zuul/JedisUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="545">
-          <caret line="69" column="39" selection-start-line="69" selection-start-column="39" selection-end-line="69" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cloud-zuul/src/main/java/com/cloud/zuul/ZuulApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="19" column="42" lean-forward="true" selection-start-line="19" selection-start-column="42" selection-end-line="19" selection-end-column="42" />
-          <folding>
-            <element signature="e#554#555#0" expanded="true" />
-            <element signature="e#620#621#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-tx/5.0.9.RELEASE/spring-tx-5.0.9.RELEASE.jar!/org/springframework/transaction/interceptor/TransactionAspectSupport.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="178" selection-start-line="178" selection-end-line="178" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/5.0.9.RELEASE/spring-core-5.0.9.RELEASE.jar!/org/springframework/cglib/proxy/MethodProxy.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="105" selection-start-line="105" selection-end-line="105" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.0.9.RELEASE/spring-web-5.0.9.RELEASE.jar!/org/springframework/web/client/RestTemplate.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="165" column="17" selection-start-line="165" selection-start-column="17" selection-end-line="165" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cloud-device/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
-          <caret line="56" column="21" selection-start-line="56" selection-start-column="21" selection-end-line="56" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cloud-device/src/main/java/com/cloud/device/DeviceApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="4" column="67" selection-start-line="4" selection-start-column="67" selection-end-line="4" selection-end-column="67" />
-          <folding>
-            <element signature="e#787#788#0" expanded="true" />
-            <element signature="e#824#825#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-564">
-          <caret line="15" column="35" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cloud-zuul/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="48" column="31" selection-start-line="48" selection-start-column="31" selection-end-line="48" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://F:/SpringCloudExamples/spring-cloud-zuul-filter/spring-cloud-zuul-filter/src/main/java/io/ymq/example/zuul/filter/PasswordFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="346">
-          <caret line="46" column="43" selection-start-line="46" selection-start-column="43" selection-end-line="46" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://F:/SpringCloudExamples/spring-cloud-zuul-filter/spring-cloud-zuul-filter/src/main/java/io/ymq/example/zuul/filter/TokenFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="42" column="27" lean-forward="true" selection-start-line="42" selection-start-column="27" selection-end-line="42" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://F:/SpringCloudExamples/spring-cloud-zuul-filter/spring-cloud-zuul-filter/src/main/java/io/ymq/example/zuul/filter/PasswordFilter.java" />
+    <entry file="file://F:/SpringCloudExamples/spring-cloud-zuul-filter/spring-cloud-zuul-filter/src/main/java/io/ymq/example/zuul/filter/TokenFilter.java" />
     <entry file="file://$PROJECT_DIR$/cloud-area/src/main/java/com/cloud/area/config/DataSourceConfig.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="115">
@@ -919,89 +717,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cloud-files/src/main/java/com/cloud/files/Service/AmmeterService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-378">
-          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cloud-service/src/main/java/com/cloud/service/ServiceApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="346">
-          <caret line="29" column="62" selection-start-line="29" selection-start-column="62" selection-end-line="29" selection-end-column="62" />
-          <folding>
-            <element signature="e#646#647#0" expanded="true" />
-            <element signature="e#715#716#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cloud-consumer/src/main/java/com/cloud/consumer/ClientService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cloud-files/src/main/java/com/cloud/files/FilesApplication.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="483">
           <caret line="25" column="34" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#690#691#0" expanded="true" />
-            <element signature="e#731#732#0" expanded="true" />
-          </folding>
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cloud-consumer/src/main/java/com/cloud/consumer/HelloController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="21" column="40" selection-start-line="21" selection-start-column="40" selection-end-line="21" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cloud-consumer/src/main/java/com/cloud/consumer/config/DataSourceConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="14" column="14" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cloud-consumer/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/cloud-files/src/main/java/com/cloud/files/Service/ExcelImport/AmmeterImportService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="547">
           <caret line="46" column="35" selection-start-line="46" selection-start-column="35" selection-end-line="46" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cloud-consumer/src/main/java/com/cloud/consumer/ConsumerApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="18" column="22" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1047,16 +773,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cloud-consumer/src/main/java/com/cloud/consumer/HelloService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="8" column="20" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cloud-files/src/main/resources/application.yaml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -1064,22 +780,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cloud-files/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1260">
-          <caret line="60" column="44" selection-start-line="60" selection-start-column="44" selection-end-line="60" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cloud-zuul/pom.xml">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cloud-consumer/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="329">
-          <caret line="37" column="21" lean-forward="true" selection-start-line="37" selection-start-column="21" selection-end-line="37" selection-end-column="21" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cloud-device/src/main/java/com/cloud/device/Controller/CommandController.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1151,6 +853,194 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="231">
           <caret line="28" selection-start-line="28" selection-end-line="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cloud-device/src/main/java/com/cloud/device/DeviceApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="13" column="22" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cloud-device/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="346">
+          <caret line="58" column="20" lean-forward="true" selection-start-line="58" selection-start-column="20" selection-end-line="58" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cloud-device/src/main/java/com/cloud/device/config/DataSourceConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="21" column="103" selection-start-line="21" selection-start-column="68" selection-end-line="21" selection-end-column="103" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cloud-consumer/src/main/java/com/cloud/consumer/ConsumerApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="18" column="22" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cloud-files/src/main/java/com/cloud/files/Service/WaterMeterService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-489">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cloud-files/src/main/java/com/cloud/files/Service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cloud-files/src/main/java/com/cloud/files/Service/BlockService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cloud-files/src/main/java/com/cloud/files/Service/AmmeterService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-865">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cloud-files/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="59" column="29" lean-forward="true" selection-start-line="59" selection-start-column="29" selection-end-line="59" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$MAVEN_REPOSITORY$/com/codingapi/txlcn/txlcn-tc/5.0.2.RELEASE/txlcn-tc-5.0.2.RELEASE.pom">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cloud-service/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="354">
+          <caret line="46" column="34" selection-start-line="46" selection-start-column="34" selection-end-line="46" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cloud-service/src/main/java/com/cloud/service/config/DataSourceConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="27" column="41" lean-forward="true" selection-start-line="27" selection-start-column="41" selection-end-line="27" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cloud-consumer/src/main/java/com/cloud/consumer/HelloController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="21" column="40" selection-start-line="21" selection-start-column="40" selection-end-line="21" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cloud-consumer/src/main/java/com/cloud/consumer/DB.java" />
+    <entry file="file://$PROJECT_DIR$/cloud-consumer/src/main/java/com/cloud/consumer/DbService.java" />
+    <entry file="file://$PROJECT_DIR$/cloud-consumer/src/main/java/com/cloud/consumer/DbMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cloud-consumer/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="9" column="9" lean-forward="true" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cloud-service/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="13" column="72" selection-start-line="13" selection-start-column="72" selection-end-line="13" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cloud-consumer/src/main/java/com/cloud/consumer/ClientService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="27" selection-start-column="27" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cloud-consumer/src/main/java/com/cloud/consumer/HelloService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="15" column="27" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cloud-consumer/src/main/java/com/cloud/consumer/config/DataSourceConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="21" column="126" selection-start-line="21" selection-start-column="126" selection-end-line="21" selection-end-column="126" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cloud-service/src/main/java/com/cloud/service/ServiceApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="35" column="32" selection-start-line="35" selection-start-column="32" selection-end-line="35" selection-end-column="32" />
+          <folding>
+            <element signature="e#1086#1087#0" expanded="true" />
+            <element signature="e#1125#1126#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cloud-service/src/main/java/com/cloud/service/TxService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="14" column="26" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cloud-consumer/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1100">
+          <caret line="50" selection-start-line="50" selection-end-line="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cloud-setting/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1122">
+          <caret line="51" selection-start-line="51" selection-end-line="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="572">
+          <caret line="44" column="19" lean-forward="true" selection-start-line="44" selection-start-column="19" selection-end-line="44" selection-end-column="19" />
         </state>
       </provider>
     </entry>

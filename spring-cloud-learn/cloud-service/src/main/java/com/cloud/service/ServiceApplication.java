@@ -1,5 +1,7 @@
 package com.cloud.service;
 
+import com.codingapi.txlcn.tc.config.EnableDistributedTransaction;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -16,18 +18,22 @@ import org.springframework.web.bind.annotation.RestController;
 @SpringBootApplication
 @EnableEurekaClient
 @RestController
+@EnableDistributedTransaction
 public class ServiceApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(ServiceApplication.class, args);
     }
 
+    @Autowired
+    TxService txService;
+
     @Value("${server.port}")
     String port;
 
     @RequestMapping("hello")
     public String hello(@RequestParam(value = "name", defaultValue = "forwei") String name){
-        return "hello" + name + ", i am from service:" + port;
+        return txService.test();
     }
 
 }
