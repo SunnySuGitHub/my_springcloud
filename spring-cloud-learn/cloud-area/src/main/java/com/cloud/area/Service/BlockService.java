@@ -18,19 +18,19 @@ public class BlockService {
     @Resource
     BlockMapper blockMapper;
 
-    public ResultData getBlockByCid(int cid){
+    public ResultData getBlockByCid(int cid) {
         return Result.success(blockMapper.findAllByCid(cid));
     }
 
-    public ResultData getBlock(int bid){
+    public ResultData getBlock(int bid) {
         return Result.success(blockMapper.getBlock(bid));
     }
 
-    public ResultData delBlock(int bid){
+    public ResultData delBlock(int bid) {
         return Result.success(blockMapper.delBlock(bid));
     }
 
-    public ResultData uptBlock(Block block){
+    public ResultData uptBlock(Block block) {
         return Result.success(blockMapper.uptBlock(block));
     }
 }

@@ -15,6 +15,8 @@ import java.util.List;
 @Repository
 public interface WatermeterUsageMapper {
     List<MeterDailyUsage> getWatemeterDailyUsage(@Param("meterNo") String meterNo, @Param("enprNo") String enprNo);
+
     BigDecimal getCommunityUsage(@Param("cid") int cid, @Param("startLine") long startLine, @Param("endLine") long endLine, @Param("enprNo") String enprNo);
+
     int save(WatermeterUsage watermeterUsage);
 }

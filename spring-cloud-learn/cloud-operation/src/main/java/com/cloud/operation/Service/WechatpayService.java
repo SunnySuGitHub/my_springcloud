@@ -39,11 +39,10 @@ public class WechatpayService {
     PayhistoryMapper payhistoryMapper;
 
 
-
     public ResultData doMicroOrder(String authCode, String fee, int uid, String enprNo) {
         Enpr enpr = enprMapper.findByEnprNo(enprNo);
         User user = userMapper.findByUid(uid);
-        if(enpr == null || user == null) {
+        if (enpr == null || user == null) {
             return Result.error(HttpStatus.BAD_REQUEST, "不存在此用户");
         }
         Payhistory payhistory = new Payhistory();
@@ -51,10 +50,10 @@ public class WechatpayService {
         BigDecimal payAmount = new BigDecimal(fee).divide(new BigDecimal("100"));
         payhistory.setPayAmount(payAmount);
         payhistory.setPayStatus(Constants.PAY_FAILED);
-        payhistory.setPayTime(System.currentTimeMillis()/1000);
+        payhistory.setPayTime(System.currentTimeMillis() / 1000);
         payhistory.setPayMethod(1);
         int payId = payhistoryMapper.save(payhistory);
-        String out_trade_no = ""+uid+System.currentTimeMillis();
+        String out_trade_no = "" + uid + System.currentTimeMillis();
         Map resMap = new HashMap<>();
         try {
             WXConfigUtil config = new WXConfigUtil();
@@ -67,7 +66,7 @@ public class WechatpayService {
             req.put("appid", config.getAppID());                                            //公众账号ID
             req.put("mch_id", config.getMchID());                                           //商户号
             req.put("nonce_str", WXPayUtil.generateNonceStr());                             //随机字符串
-            req.put("body", enprNo+"-"+"charge");                                           //商品名称
+            req.put("body", enprNo + "-" + "charge");                                           //商品名称
             req.put("out_trade_no", out_trade_no);                                          //商户订单号，自己生成
             req.put("total_fee", fee);                                                      //订单金额int 传来的费用,分数形式  默认货币为CNY
             req.put("spbill_create_ip", Constants.SPBILL_CREATE_IP);                        //调用微信支付API的机器IP
@@ -85,7 +84,7 @@ public class WechatpayService {
                 resMap.put("outTradeNo", response.get("out_trade_no"));
                 resMap.put("timeEnd", response.get("time_end"));
                 String resultCode = response.get("result_code");
-                if(resultCode.equals("SUCCESS")){//表示交易成功
+                if (resultCode.equals("SUCCESS")) {//表示交易成功
                     Payhistory prePay = payhistoryMapper.findById(payId);
                     prePay.setTransactionId(response.get("transaction_id"));
                     prePay.setPayStatus(Constants.PAY_SUCCEES);
@@ -95,9 +94,9 @@ public class WechatpayService {
                 } else {//表示当前交易尚未成功，可能用户付款中或者取消了订单
                     String errCode = response.get("err_code");
                     Map<String, String> res;
-                    if(errCode.equals("USERPAYING")){//付款中状态
-                        double ts = System.currentTimeMillis()/1000;
-                        do{
+                    if (errCode.equals("USERPAYING")) {//付款中状态
+                        double ts = System.currentTimeMillis() / 1000;
+                        do {
                             Thread.sleep(5000);
                             Map<String, String> reReq = new HashMap<>();
                             reReq.put("appid", config.getAppID());
@@ -108,8 +107,9 @@ public class WechatpayService {
                                     WXPayConstants.SignType.MD5));
                             res = wxpay.orderQuery(reReq);
                             errCode = res.get("trade_state");
-                        } while (errCode != null && errCode.equals("USERPAYING") && (System.currentTimeMillis()/1000 - ts) < 30);
-                        if(errCode.equals("SUCCESS")){ // 成功
+                        }
+                        while (errCode != null && errCode.equals("USERPAYING") && (System.currentTimeMillis() / 1000 - ts) < 30);
+                        if (errCode.equals("SUCCESS")) { // 成功
                             Payhistory prePay = payhistoryMapper.findById(payId);
                             prePay.setTransactionId(response.get("transaction_id"));
                             prePay.setPayStatus(Constants.PAY_SUCCEES);
@@ -133,13 +133,13 @@ public class WechatpayService {
     }
 
     @Transactional
-    public ResultData successProcess(User user, Payhistory payhistory, Map resMap){
-        try{
+    public ResultData successProcess(User user, Payhistory payhistory, Map resMap) {
+        try {
             userMapper.uptUser(user);
             payhistoryMapper.update(payhistory);
             return Result.success(resMap);
-        } catch (Exception e){
-            System.err.println("用户编号为"+user.getuId()+"的用户微信支付"+payhistory.getId()+"成功，但余额未更新");
+        } catch (Exception e) {
+            System.err.println("用户编号为" + user.getuId() + "的用户微信支付" + payhistory.getId() + "成功，但余额未更新");
             return Result.error(HttpStatus.INTERNAL_SERVER_ERROR, "微信支付成功，但内部系统出现问题，后台已记录，后续将给您进行处理");
         }
     }

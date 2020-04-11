@@ -10,6 +10,7 @@ import org.slf4j.LoggerFactory;
 public class Jobs {
 
     private static Logger logger = LoggerFactory.getLogger(Jobs.class);
+
     public void show() {
         logger.info("come");
     }

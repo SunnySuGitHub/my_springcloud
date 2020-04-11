@@ -13,7 +13,7 @@ public class TxService {
     @Transactional
     @LcnTransaction
     public String test() {
-        int i = 1/0;
+        int i = 1 / 0;
         return "OK";
     }
 }

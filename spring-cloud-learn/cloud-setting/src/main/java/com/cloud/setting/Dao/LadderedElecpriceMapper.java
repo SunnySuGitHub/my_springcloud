@@ -13,5 +13,6 @@ import java.util.List;
 @Repository
 public interface LadderedElecpriceMapper {
     LadderedElecprice getSingleLadder(@Param("enprNo") String enprNo, @Param("voltageType") int voltageType, @Param("costType") int costType);
+
     List<LadderedElecprice> getPriceList(@Param("enprNo") String enprNo, @Param("voltageType") int voltageType);
 }

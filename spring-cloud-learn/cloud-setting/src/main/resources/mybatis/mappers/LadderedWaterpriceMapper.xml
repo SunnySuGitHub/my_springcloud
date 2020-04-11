@@ -5,12 +5,12 @@
     <!--mapper接口所在包-->
     <select id="getLevels" resultType="com.cloud.setting.Entity.LadderedWaterprice">
         select
-          *
+        *
         from
-          t_laddered_waterprice
+        t_laddered_waterprice
         where
-          water_type = #{waterType}
-          and enprNo = #{enprNo}
+        water_type = #{waterType}
+        and enprNo = #{enprNo}
         order by cost_level asc
     </select>
 

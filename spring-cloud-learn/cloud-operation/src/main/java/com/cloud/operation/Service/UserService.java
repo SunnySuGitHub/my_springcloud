@@ -26,45 +26,48 @@ public class UserService {
     @Autowired
     JedisUtil jedisUtil;
 
-    public ResultData getUserInfoByBlockId(int bId, String enprNo){
+    @Autowired
+    MeterService meterService;
+
+    public ResultData getUserInfoByBlockId(int bId, String enprNo) {
         List<Integer> uids = userMapper.findUidsByBid(bId);
         List<UserInfoVo> res = new ArrayList<>();
-        for(int uid : uids){
-            if(jedisUtil.hGet(enprNo, "UserInfoUid"+uid) == null) {
+        for (int uid : uids) {
+            if (jedisUtil.hGet(enprNo, "UserInfoUid" + uid) == null) {
                 List<UserInfoVo> infoVo = userMapper.findUserInfoVoByUid(uid);
-                jedisUtil.hSet(enprNo, "UserInfoUid"+uid, JSONArray.toJSONString(infoVo));
+                jedisUtil.hSet(enprNo, "UserInfoUid" + uid, JSONArray.toJSONString(infoVo));
                 res.addAll(infoVo);
             } else {
-                List<UserInfoVo> infoVo = JSONArray.parseArray(jedisUtil.hGet(enprNo, "UserInfoUid"+uid), UserInfoVo.class);
+                List<UserInfoVo> infoVo = JSONArray.parseArray(jedisUtil.hGet(enprNo, "UserInfoUid" + uid), UserInfoVo.class);
                 res.addAll(infoVo);
             }
         }
         return Result.success(res);
     }
 
-    public ResultData getUserInfoByUid(int uid, String enprNo){
-        if(jedisUtil.hGet(enprNo, "UserInfoUid"+uid) == null) {
+    public ResultData getUserInfoByUid(int uid, String enprNo) {
+        if (jedisUtil.hGet(enprNo, "UserInfoUid" + uid) == null) {
             List<UserInfoVo> infoVos = userMapper.findUserInfoVoByUid(uid);
-            jedisUtil.hSet(enprNo, "UserInfoUid"+uid, JSONArray.toJSONString(infoVos));
+            jedisUtil.hSet(enprNo, "UserInfoUid" + uid, JSONArray.toJSONString(infoVos));
             return Result.success(infoVos);
         } else {
-            List<UserInfoVo> infoVos = JSONArray.parseArray(jedisUtil.hGet(enprNo, "UserInfoUid"+uid), UserInfoVo.class);
+            List<UserInfoVo> infoVos = JSONArray.parseArray(jedisUtil.hGet(enprNo, "UserInfoUid" + uid), UserInfoVo.class);
             return Result.success(infoVos);
         }
     }
 
-    public ResultData getUserInfoByUname(String uname, String enprNo){
+    public ResultData getUserInfoByUname(String uname, String enprNo) {
         List<Integer> uids = userMapper.findUidsByUname(uname, enprNo);
         List<UserInfoVo> res = new ArrayList<>();
-        for(int uid : uids) {
+        for (int uid : uids) {
             res.addAll(userMapper.findUserInfoVoByUid(uid));
         }
         return Result.success(res);
     }
 
-    public ResultData getUserInfoByMeterNo(String meterNo, int meterType, String enprNo){
+    public ResultData getUserInfoByMeterNo(String meterNo, int meterType, String enprNo) {
         int uid = -1;
-        if(meterType == Constants.TYPE_WATERMETER) {
+        if (meterType == Constants.TYPE_WATERMETER) {
             uid = -1; //todo 组件间通信
         } else {
             uid = -1;

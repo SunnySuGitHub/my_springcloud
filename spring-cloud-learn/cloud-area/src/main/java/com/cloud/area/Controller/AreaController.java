@@ -64,7 +64,7 @@ public class AreaController {
      */
     @GetMapping("/community/list")
     public ResultData communityList(@RequestParam("enprNo") String enprNo) {
-        if(StringUtils.isNotBlank(enprNo))
+        if (StringUtils.isNotBlank(enprNo))
             return ResponseHandler.doHandle(() -> communityService.communityList(enprNo));
         return Result.error(HttpStatus.BAD_REQUEST, "缺失公司编码");
     }

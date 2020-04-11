@@ -6,17 +6,17 @@
 
     <select id="getAmmeterHistorydata" resultType="com.cloud.history.Entity.Ammeters.AmmeterHistorydata">
         select
-          ammeter_no,
-          read_value,
-          read_time,
-          read_type,
-          enprNo
+        ammeter_no,
+        read_value,
+        read_time,
+        read_type,
+        enprNo
         from
-          t_ammeter_historydata
+        t_ammeter_historydata
         where
-          meter_no = #{ammeterNo}
-          and enprNo = #{enprNo}
-          and read_type = #{readType}
+        meter_no = #{ammeterNo}
+        and enprNo = #{enprNo}
+        and read_type = #{readType}
         <if test="startLine !=-1">
             <![CDATA[
             and read_time >= #{startLine}

@@ -13,7 +13,10 @@ import java.util.List;
 @Repository
 public interface CenterMapper {
     int save(Center center);
+
     int delete(@Param("id") int id);
+
     List<Center> getCenterByEnprNo(@Param("enprNo") String enprNo);
+
     List<Center> getCenterByCid(@Param("cId") int cId);
 }

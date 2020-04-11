@@ -21,7 +21,7 @@ public class HelloService {
 
     @LcnTransaction //分布式事务注解
     @Transactional  //本地事务注解
-    public String hello(String name) throws Exception{
+    public String hello(String name) throws Exception {
         dbMapper.insert();
         return clientService.test(name);
     }

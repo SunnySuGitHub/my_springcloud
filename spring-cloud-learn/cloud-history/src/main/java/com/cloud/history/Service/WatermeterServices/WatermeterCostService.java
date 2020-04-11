@@ -17,10 +17,9 @@ public class WatermeterCostService {
     @Resource
     WatermeterCostMapper watermeterCostMapper;
 
-    public ResultData getWatermeterDailyCost(String meterNo, String enprNo){
+    public ResultData getWatermeterDailyCost(String meterNo, String enprNo) {
         return Result.success(watermeterCostMapper.getWatermeterDailyCost(meterNo, enprNo));
     }
-
 
 
 }

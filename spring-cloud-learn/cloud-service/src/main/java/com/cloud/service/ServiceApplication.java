@@ -32,7 +32,7 @@ public class ServiceApplication {
     String port;
 
     @RequestMapping("hello")
-    public String hello(@RequestParam(value = "name", defaultValue = "forwei") String name){
+    public String hello(@RequestParam(value = "name", defaultValue = "forwei") String name) {
         return txService.test();
     }
 

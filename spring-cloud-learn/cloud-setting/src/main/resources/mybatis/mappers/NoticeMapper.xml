@@ -5,49 +5,49 @@
     <!--mapper接口所在包-->
     <insert id="addNotice" parameterType="com.cloud.setting.Entity.Notice">
         insert into
-          t_notice(
-            title,
-            content,
-            publish_time,
-            enprNo
-          ) values (
-            #{title},
-            #{content},
-            #{publishTime},
-            #{enprNo}
-          )
+        t_notice(
+        title,
+        content,
+        publish_time,
+        enprNo
+        ) values (
+        #{title},
+        #{content},
+        #{publishTime},
+        #{enprNo}
+        )
     </insert>
 
     <select id="noticeList" resultType="com.cloud.setting.Entity.Notice">
         select
-          *
+        *
         from
-          t_notice
+        t_notice
         where
-          enprNo = #{enprNo}
-          and is_delete = 0
+        enprNo = #{enprNo}
+        and is_delete = 0
     </select>
 
     <update id="uptNotice" parameterType="com.cloud.setting.Entity.Notice">
         update
-          t_notice
+        t_notice
         <set>
-            <if test="title !=null"> ,title = #{title}</if>
-            <if test="content !=null"> ,content = #{content}</if>
-            <if test="publishTime !=null"> ,publish_time = #{publishTime}</if>
-            <if test="enprNo !=null"> ,enprNo = #{enprNo}</if>
+            <if test="title !=null">,title = #{title}</if>
+            <if test="content !=null">,content = #{content}</if>
+            <if test="publishTime !=null">,publish_time = #{publishTime}</if>
+            <if test="enprNo !=null">,enprNo = #{enprNo}</if>
         </set>
         where
-          id = #{id}
+        id = #{id}
     </update>
 
     <update id="delNotice" parameterType="java.lang.Integer">
         update
-          t_notice
+        t_notice
         set
-          is_delete = 1
+        is_delete = 1
         where
-          id = #{id}
+        id = #{id}
     </update>
 
 

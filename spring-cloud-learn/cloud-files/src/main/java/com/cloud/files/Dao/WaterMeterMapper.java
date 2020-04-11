@@ -14,15 +14,26 @@ import java.util.Set;
 @Repository
 public interface WaterMeterMapper {
     Watermeter getWaterMeterDetail(@Param("meterNo") String meterNo, @Param("enprNo") String enprNo);
+
     List<Watermeter> getAllWaterMeterDetail(@Param("enprNo") String enprNo, @Param("state") int state);
+
     List<Watermeter> findAll();
+
     int uptWatermeterValue(Watermeter watermeter);
+
     int saveMeter(Watermeter watermeter);
+
     Set<String> findAllWatermeterNoByEnprNo(@Param("enprNo") String enprNo);
+
     List<Watermeter> findFailedWatermeter(int cid);
+
     List<Watermeter> findWatermeterByUid(@Param("uid") int uid);
+
     void monthlyRefresh();
+
     void dailyRefresh();
+
     int delete(@Param("meterNo") String meterNo, @Param("enprNo") String enprNo);
+
     List<Watermeter> getWatermeterByCenter(@Param("centerId") int centerId);
 }

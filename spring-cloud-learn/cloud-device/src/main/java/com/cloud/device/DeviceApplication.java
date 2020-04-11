@@ -20,7 +20,7 @@ public class DeviceApplication {
     }
 
     @RequestMapping("hello")
-    public String hello(@RequestParam(value = "name", defaultValue = "forwei") String name){
+    public String hello(@RequestParam(value = "name", defaultValue = "forwei") String name) {
         return "hello" + name;
     }
 }

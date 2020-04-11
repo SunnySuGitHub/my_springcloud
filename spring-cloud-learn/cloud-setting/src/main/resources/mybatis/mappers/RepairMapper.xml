@@ -5,51 +5,51 @@
     <!--mapper接口所在包-->
     <insert id="save" parameterType="com.cloud.setting.Entity.Repair">
         insert into
-          t_repair(
-            u_id,
-            u_tel,
-            u_name,
-            u_addr,
-            submit_time,
-            problem,
-            enprNo
-          ) values (
-            #{uId},
-            #{uTel},
-            #{uName},
-            #{uAddr},
-            #{submitTime},
-            #{problem},
-            #{enprNo}
-          )
+        t_repair(
+        u_id,
+        u_tel,
+        u_name,
+        u_addr,
+        submit_time,
+        problem,
+        enprNo
+        ) values (
+        #{uId},
+        #{uTel},
+        #{uName},
+        #{uAddr},
+        #{submitTime},
+        #{problem},
+        #{enprNo}
+        )
     </insert>
 
     <select id="list" resultType="com.cloud.setting.Entity.Repair">
         select
-          *
+        *
         from
-          t_repair
+        t_repair
         where
-          enprNo = #{enprNo}
-          <if test="state !=-1"> and state = #{state}</if>
+        enprNo = #{enprNo}
+        <if test="state !=-1">and state = #{state}</if>
     </select>
 
     <update id="uptRepair" parameterType="com.cloud.setting.Entity.Repair">
         update
-          t_repair
+        t_repair
         <set>
-            <if test="uId !=null"> ,u_id = #{uId}</if>
-            <if test="uTel !=null"> ,u_tel = #{uTel}</if>
-            <if test="uName !=null"> ,u_name = #{uName}</if>
-            <if test="uAddr !=null"> ,u_addr = #{uAddr}</if>
-            <if test="repairmanName !=null"> ,repairman_name = #{repairmanName}</if>
-            <if test="repairmanTel !=null"> ,repairman_tel = #{repairmanTel}</if>
-            <if test="isFeedback !=null"> ,is_feedback = #{isFeedback}</if>
-            <if test="problem !=null"> ,problem = #{problem}</if>
-            <if test="state !=null"> ,state = #{state}</if>
+            <if test="uId !=null">,u_id = #{uId}</if>
+            <if test="uTel !=null">,u_tel = #{uTel}</if>
+            <if test="uName !=null">,u_name = #{uName}</if>
+            <if test="uAddr !=null">,u_addr = #{uAddr}</if>
+            <if test="repairmanName !=null">,repairman_name = #{repairmanName}</if>
+            <if test="repairmanTel !=null">,repairman_tel = #{repairmanTel}</if>
+            <if test="isFeedback !=null">,is_feedback = #{isFeedback}</if>
+            <if test="problem !=null">,problem = #{problem}</if>
+            <if test="state !=null">,state = #{state}</if>
         </set>
         where
-          repair_id = #{repairId}
+        repair_id = #{repairId}
     </update>
 
 </mapper>

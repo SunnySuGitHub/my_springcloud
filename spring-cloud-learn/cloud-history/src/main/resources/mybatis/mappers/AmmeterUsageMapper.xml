@@ -6,81 +6,81 @@
 
     <select id="getAmmeterTotalDailyUsage" resultType="com.cloud.history.Entity.VO.MeterDailyUsage">
         select
-          ammeter_usage as daily_use,
-          read_date as dateline,
-          1 as water_type
+        ammeter_usage as daily_use,
+        read_date as dateline,
+        1 as water_type
         from
-          t_ammeter_usage
+        t_ammeter_usage
         where
-          ammeter_no = #{ammeterNo}
-          and enprNo = #{enprNo}
+        ammeter_no = #{ammeterNo}
+        and enprNo = #{enprNo}
     </select>
 
     <select id="getAmmeterSharpDailyUsage" resultType="com.cloud.history.Entity.VO.MeterDailyUsage">
         select
-          sharp_usage as daily_use,
-          read_date as dateline,
-          1 as water_type
+        sharp_usage as daily_use,
+        read_date as dateline,
+        1 as water_type
         from
-          t_ammeter_usage
+        t_ammeter_usage
         where
-          ammeter_no = #{ammeterNo}
-          and enprNo = #{enprNo}
+        ammeter_no = #{ammeterNo}
+        and enprNo = #{enprNo}
     </select>
 
     <select id="getAmmeterPeekDailyUsage" resultType="com.cloud.history.Entity.VO.MeterDailyUsage">
         select
-          peek_usage as daily_use,
-          read_date as dateline,
-          1 as water_type
+        peek_usage as daily_use,
+        read_date as dateline,
+        1 as water_type
         from
-          t_ammeter_usage
+        t_ammeter_usage
         where
-          ammeter_no = #{ammeterNo}
-          and enprNo = #{enprNo}
+        ammeter_no = #{ammeterNo}
+        and enprNo = #{enprNo}
     </select>
 
     <select id="getAmmeterFlatDailyUsage" resultType="com.cloud.history.Entity.VO.MeterDailyUsage">
         select
-          flat_usage as daily_use,
-          read_date as dateline,
-          1 as water_type
+        flat_usage as daily_use,
+        read_date as dateline,
+        1 as water_type
         from
-          t_ammeter_usage
+        t_ammeter_usage
         where
-          ammeter_no = #{ammeterNo}
-          and enprNo = #{enprNo}
+        ammeter_no = #{ammeterNo}
+        and enprNo = #{enprNo}
     </select>
 
     <select id="getAmmeterLowDailyUsage" resultType="com.cloud.history.Entity.VO.MeterDailyUsage">
         select
-          low_usage as daily_use,
-          read_date as dateline,
-          1 as water_type
+        low_usage as daily_use,
+        read_date as dateline,
+        1 as water_type
         from
-          t_ammeter_usage
+        t_ammeter_usage
         where
-          ammeter_no = #{ammeterNo}
-          and enprNo = #{enprNo}
+        ammeter_no = #{ammeterNo}
+        and enprNo = #{enprNo}
     </select>
 
     <select id="getCommunityUsage" resultType="java.math.BigDecimal">
         select
-          sum(ammeter_usage)
+        sum(ammeter_usage)
         from
-          t_ammeter_usage
+        t_ammeter_usage
         where
-          ammeter_no in(
-            select
-              ammeter_no
-            from
-              t_ammeter
-            where
-              c_id = #{cid}
-              and is_delete = 0
-          )
-          and enprNo = #{enprNo}
-          <![CDATA[
+        ammeter_no in(
+        select
+        ammeter_no
+        from
+        t_ammeter
+        where
+        c_id = #{cid}
+        and is_delete = 0
+        )
+        and enprNo = #{enprNo}
+        <![CDATA[
             and read_ts >= #{startLine}
             and read_ts <= #{endLine}
           ]]>
@@ -88,29 +88,29 @@
 
     <insert id="save" parameterType="com.cloud.history.Entity.Ammeters.AmmeterUsage">
         insert into
-          t_ammeter_usage(
-            ammeter_no,
-            ammeter_usage,
-            sharp_usage,
-            peek_usage,
-            flat_usage,
-            low_usage,
-            read_date,
-            read_ts,
-            read_value,
-            enprNo
-          ) values (
-            #{ammeterNo},
-            #{ammeterUsage},
-            #{sharpUsage},
-            #{peekUsage},
-            #{flatUsage},
-            #{lowUsage},
-            #{readDate},
-            #{readTs}
-            #{readValue},
-            #{enprNo}
-          )
+        t_ammeter_usage(
+        ammeter_no,
+        ammeter_usage,
+        sharp_usage,
+        peek_usage,
+        flat_usage,
+        low_usage,
+        read_date,
+        read_ts,
+        read_value,
+        enprNo
+        ) values (
+        #{ammeterNo},
+        #{ammeterUsage},
+        #{sharpUsage},
+        #{peekUsage},
+        #{flatUsage},
+        #{lowUsage},
+        #{readDate},
+        #{readTs}
+        #{readValue},
+        #{enprNo}
+        )
     </insert>
 
 </mapper>

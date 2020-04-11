@@ -6,86 +6,86 @@
 
     <select id="getAmmeterDetail" resultType="com.cloud.device.Entity.Ammeter">
         select
-          *
+        *
         from
-          t_ammeter
+        t_ammeter
         where
-          ammeter_no = #{ammeterNo}
-          and enprNo = #{enprNo}
-          and is_delete = 0
+        ammeter_no = #{ammeterNo}
+        and enprNo = #{enprNo}
+        and is_delete = 0
     </select>
 
     <select id="getAllAmmeterDetail" resultType="com.cloud.device.Entity.Ammeter">
         select
-          *
+        *
         from
-          t_ammeter
+        t_ammeter
         where
-          enprNo = #{enprNo}
-          and is_delete = 0
-          <if test="state !=-1"> and state = #{state}</if>
+        enprNo = #{enprNo}
+        and is_delete = 0
+        <if test="state !=-1">and state = #{state}</if>
     </select>
 
     <select id="findAll" resultType="com.cloud.device.Entity.Ammeter">
         select
-          *
+        *
         from
-          t_ammeter
+        t_ammeter
         where
-          is_delete = 0
+        is_delete = 0
     </select>
 
     <update id="uptAmmeterValue" parameterType="com.cloud.device.Entity.Ammeter">
         update
-          t_ammeter
+        t_ammeter
         set
-          read_time = #{readTime},
-          read_value = #{readValue},
-          pre_read_time = #{preReadTime},
-          pre_read_value = #{preReadValue},
-          state = #{state}
+        read_time = #{readTime},
+        read_value = #{readValue},
+        pre_read_time = #{preReadTime},
+        pre_read_value = #{preReadValue},
+        state = #{state}
         where
-          ammeter_id = #{ammeterId}
+        ammeter_id = #{ammeterId}
     </update>
 
     <update id="delete">
         update
-          t_ammeter
+        t_ammeter
         set
-          is_delete = 1
+        is_delete = 1
         where
-          ammeter_no = #{ammeterNo}
-          and enprNo = #{enprNo}
+        ammeter_no = #{ammeterNo}
+        and enprNo = #{enprNo}
     </update>
 
     <select id="findFailedAmmeters" resultType="com.cloud.device.Entity.Ammeter">
         select
-          *
+        *
         from
-          t_ammeter
+        t_ammeter
         where
-          id_delete = 0
-          and c_id =#{cid}
-          and state = 1
+        id_delete = 0
+        and c_id =#{cid}
+        and state = 1
     </select>
 
     <select id="findAmmeterByUid" resultType="com.cloud.device.Entity.Ammeter">
         select
-          *
+        *
         from
-          t_ammeter
+        t_ammeter
         where
-          is_delete = 0
-          and u_id = #{uid}
+        is_delete = 0
+        and u_id = #{uid}
     </select>
 
     <select id="getAmmeterByCenter" resultType="com.cloud.device.Entity.Ammeter">
         select
-          *
+        *
         from
-          t_ammeter
+        t_ammeter
         where
-          center_id = #{centerId}
-          and is_delete = 0
+        center_id = #{centerId}
+        and is_delete = 0
     </select>
 </mapper>

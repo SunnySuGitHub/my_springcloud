@@ -138,7 +138,7 @@ public class MeterController {
      */
     @GetMapping("/GetAmmeterDailyCost")
     public ResultData getAmmeterDailyCost(@RequestParam("ammeterNo") String ammeterNo,
-                                           @RequestParam("enprNo") String enprNo,
+                                          @RequestParam("enprNo") String enprNo,
                                           @RequestParam("readType") int readType) {
         if (StringUtils.isNotBlank(ammeterNo) && StringUtils.isNotBlank(enprNo)) {
             return ResponseHandler.doHandle(() -> ammeterCostService.getAmmeterDailyCost(ammeterNo, enprNo, readType));
@@ -146,7 +146,6 @@ public class MeterController {
             return Result.error(HttpStatus.BAD_REQUEST, "参数缺失");
         }
     }
-
 
 
 }

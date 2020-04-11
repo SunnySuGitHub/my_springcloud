@@ -89,9 +89,9 @@ public class WaterImportService extends ImportBase {
                     curUser.setAddress(uaddr);
                     curUser.setAccountBalance(BigDecimal.ZERO);
                     curUser.setEnprNo(enprNo);
-                    try{
+                    try {
                         userMapper.saveUser(curUser);
-                    } catch (Exception e){
+                    } catch (Exception e) {
                         e.printStackTrace();
                     }
                     uid = curUser.getuId();
@@ -107,7 +107,7 @@ public class WaterImportService extends ImportBase {
                 meter.setuId(uid);
                 meter.setcId(communityId);
                 meter.setCaliber(caliber);
-                long curUnixTime = System.currentTimeMillis()/1000;
+                long curUnixTime = System.currentTimeMillis() / 1000;
                 meter.setInstallTime(curUnixTime);
                 meter.setReadTime(curUnixTime);
                 meter.setReadValue(readValue);

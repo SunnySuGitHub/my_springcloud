@@ -13,7 +13,7 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc;
  */
 @Configuration
 @EnableWebMvc
-@ComponentScan(basePackages={"com.cloud.task.ScheduledJob.DynamicSchedule"})
+@ComponentScan(basePackages = {"com.cloud.task.ScheduledJob.DynamicSchedule"})
 public class Config {
     @Bean
     public TaskScheduler taskScheduler() {

@@ -6,11 +6,11 @@
 
     <select id="findByEnprNo" resultType="com.cloud.operation.Entity.Enpr">
         select
-          *
+        *
         from
-          t_enterprise
+        t_enterprise
         where
-          enprNo = #{enprNo}
+        enprNo = #{enprNo}
     </select>
 
 </mapper>

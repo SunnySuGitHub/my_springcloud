@@ -18,7 +18,7 @@ public class HelloController {
 
 
     @GetMapping(value = "hello")
-    public String hello(@RequestParam("name") String name) throws Exception{
+    public String hello(@RequestParam("name") String name) throws Exception {
         return helloService.hello(name);
     }
 }

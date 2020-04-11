@@ -13,6 +13,8 @@ import java.util.List;
 @Repository
 public interface AmmeterRateMapper {
     List<AmmeterRate> getRates(@Param("enprNo") String enprNo);
+
     List<AmmeterRate> getRateList(@Param("enprNo") String enprNo);
+
     int updateRate(AmmeterRate ammeterRate);
 }

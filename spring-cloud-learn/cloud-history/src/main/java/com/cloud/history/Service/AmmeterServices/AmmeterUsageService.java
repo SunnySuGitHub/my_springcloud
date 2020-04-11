@@ -18,14 +18,20 @@ public class AmmeterUsageService {
     @Resource
     AmmeterUsageMapper ammeterUsageMapper;
 
-    public ResultData getAmmeterDailyUsage(String ammeterNo, String enprNo, int readType){
+    public ResultData getAmmeterDailyUsage(String ammeterNo, String enprNo, int readType) {
         switch (readType) {
-            case 0: return Result.success(ammeterUsageMapper.getAmmeterTotalDailyUsage(ammeterNo, enprNo));
-            case 1: return Result.success(ammeterUsageMapper.getAmmeterSharpDailyUsage(ammeterNo, enprNo));
-            case 2: return Result.success(ammeterUsageMapper.getAmmeterPeekDailyUsage(ammeterNo, enprNo));
-            case 3: return Result.success(ammeterUsageMapper.getAmmeterFlatDailyUsage(ammeterNo, enprNo));
-            case 4: return Result.success(ammeterUsageMapper.getAmmeterLowDailyUsage(ammeterNo, enprNo));
-            default: return Result.success(null);
+            case 0:
+                return Result.success(ammeterUsageMapper.getAmmeterTotalDailyUsage(ammeterNo, enprNo));
+            case 1:
+                return Result.success(ammeterUsageMapper.getAmmeterSharpDailyUsage(ammeterNo, enprNo));
+            case 2:
+                return Result.success(ammeterUsageMapper.getAmmeterPeekDailyUsage(ammeterNo, enprNo));
+            case 3:
+                return Result.success(ammeterUsageMapper.getAmmeterFlatDailyUsage(ammeterNo, enprNo));
+            case 4:
+                return Result.success(ammeterUsageMapper.getAmmeterLowDailyUsage(ammeterNo, enprNo));
+            default:
+                return Result.success(null);
         }
     }
 

@@ -6,10 +6,10 @@
 
     <insert id="save" parameterType="java.lang.Integer">
         insert into
-          tx_test(
-            test_id
-          ) values (
-            #{txId}
-          )
+        tx_test(
+        test_id
+        ) values (
+        #{txId}
+        )
     </insert>
 </mapper>

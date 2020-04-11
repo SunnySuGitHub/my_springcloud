@@ -34,12 +34,11 @@ public class ManagementController {
     RateService rateService;
 
 
-
     /**
      * 用户报修
      */
     @PostMapping("/repair")
-    public ResultData repair(@RequestBody Repair repair){
+    public ResultData repair(@RequestBody Repair repair) {
         return ResponseHandler.doHandle(() -> repairService.add(repair));
     }
 
@@ -48,7 +47,7 @@ public class ManagementController {
      */
     @GetMapping("/repair/list")
     public ResultData list(@RequestParam("enprNo") String enprNo,
-                             @RequestParam(value = "state", defaultValue = "-1") int state){
+                           @RequestParam(value = "state", defaultValue = "-1") int state) {
         return ResponseHandler.doHandle(() -> repairService.list(enprNo, state));
     }
 
@@ -56,7 +55,7 @@ public class ManagementController {
      * 报修进度更新
      */
     @PutMapping("/repair")
-    public ResultData upt(@RequestBody Repair repair){
+    public ResultData upt(@RequestBody Repair repair) {
         return ResponseHandler.doHandle(() -> repairService.upt(repair));
     }
 
@@ -64,7 +63,7 @@ public class ManagementController {
      * 发布公告
      */
     @PostMapping("/notice")
-    public ResultData addNotice(@RequestBody Notice notice){
+    public ResultData addNotice(@RequestBody Notice notice) {
         return ResponseHandler.doHandle(() -> noticeService.addNotice(notice));
     }
 
@@ -72,7 +71,7 @@ public class ManagementController {
      * 查看公告发布历史
      */
     @GetMapping("/notice/list")
-    public ResultData noticeList(@RequestParam("enprNo") String enprNo){
+    public ResultData noticeList(@RequestParam("enprNo") String enprNo) {
         return ResponseHandler.doHandle(() -> noticeService.noticeList(enprNo));
     }
 
@@ -80,7 +79,7 @@ public class ManagementController {
      * 编辑公告
      */
     @PutMapping("/notice")
-    public ResultData noticeList(@RequestBody Notice notice){
+    public ResultData noticeList(@RequestBody Notice notice) {
         return ResponseHandler.doHandle(() -> noticeService.uptNotice(notice));
     }
 
@@ -89,24 +88,24 @@ public class ManagementController {
      */
     @DeleteMapping("/notice")
     public ResultData delNotice(@RequestParam("id") int id,
-                                @RequestParam("enprNo") String enprNo){
+                                @RequestParam("enprNo") String enprNo) {
         return ResponseHandler.doHandle(() -> noticeService.delNotice(id, enprNo));
     }
 
     /**
      * 获取阶梯水价
+     *
      * @param enprNo
-     * @param waterType
-     * 水表类型
-     * 1 居民生活用水
-     * 2 工业用水
-     * 3 行政事业单位用水
-     * 4 经营用水
-     * 5 特种行业用水
+     * @param waterType 水表类型
+     *                  1 居民生活用水
+     *                  2 工业用水
+     *                  3 行政事业单位用水
+     *                  4 经营用水
+     *                  5 特种行业用水
      */
     @GetMapping("/ladder/watermeter")
     public ResultData getWatermeterLadder(@RequestParam("enprNo") String enprNo,
-                                          @RequestParam("waterType") int waterType){
+                                          @RequestParam("waterType") int waterType) {
         return ResponseHandler.doHandle(() -> ladderPriceService.getWatermeterLadder(enprNo, waterType));
     }
 
@@ -115,7 +114,7 @@ public class ManagementController {
      */
     @GetMapping("/ladder/ammeter")
     public ResultData getAmmeterLadder(@RequestParam("enprNo") String enprNo,
-                                       @RequestParam("voltageType") int vType){
+                                       @RequestParam("voltageType") int vType) {
         return ResponseHandler.doHandle(() -> ladderPriceService.getAmmeterLadder(enprNo, vType));
     }
 
@@ -128,7 +127,7 @@ public class ManagementController {
      * 4：谷
      */
     @GetMapping("/rate/ammeter")
-    public ResultData getAmmeterRate(@RequestParam("enprNo") String enprNo){
+    public ResultData getAmmeterRate(@RequestParam("enprNo") String enprNo) {
         return ResponseHandler.doHandle(() -> rateService.getRateList(enprNo));
     }
 
@@ -136,11 +135,9 @@ public class ManagementController {
      * 修改电表费率
      */
     @PutMapping("/rate/ammeter")
-    public ResultData getAmmeterRate(@RequestBody AmmeterRate ammeterRate){
+    public ResultData getAmmeterRate(@RequestBody AmmeterRate ammeterRate) {
         return ResponseHandler.doHandle(() -> rateService.uptRate(ammeterRate));
     }
-
-
 
 
 }

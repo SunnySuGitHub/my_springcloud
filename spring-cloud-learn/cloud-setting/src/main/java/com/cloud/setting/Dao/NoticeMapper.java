@@ -13,7 +13,10 @@ import java.util.List;
 @Repository
 public interface NoticeMapper {
     int addNotice(Notice notice);
+
     List<Notice> noticeList(String enprNo);
+
     int uptNotice(Notice notice);
+
     int delNotice(@Param("id") int id);
 }

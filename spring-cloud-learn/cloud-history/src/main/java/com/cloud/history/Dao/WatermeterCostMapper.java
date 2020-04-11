@@ -14,5 +14,6 @@ import java.util.List;
 @Repository
 public interface WatermeterCostMapper {
     List<MeterDailyCost> getWatermeterDailyCost(@Param("meterNo") String meterNo, @Param("enprNo") String enprNo);
+
     int save(WatermeterCost watermeterCost);
 }

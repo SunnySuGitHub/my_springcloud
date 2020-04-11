@@ -14,9 +14,14 @@ import java.util.List;
 @Repository
 public interface AmmeterCostMapper {
     List<MeterDailyCost> getAmmeterTotalDailyCost(@Param("meterNo") String meterNo, @Param("enprNo") String enprNo);
+
     List<MeterDailyCost> getAmmeterSharpDailyCost(@Param("meterNo") String meterNo, @Param("enprNo") String enprNo);
+
     List<MeterDailyCost> getAmmeterPeekDailyCost(@Param("meterNo") String meterNo, @Param("enprNo") String enprNo);
+
     List<MeterDailyCost> getAmmeterFlatDailyCost(@Param("meterNo") String meterNo, @Param("enprNo") String enprNo);
+
     List<MeterDailyCost> getAmmeterLowDailyCost(@Param("meterNo") String meterNo, @Param("enprNo") String enprNo);
+
     int save(AmmeterCost ammeterCost);
 }

@@ -15,5 +15,6 @@ import java.util.List;
 public interface WatermeterHistoryMapper {
     List<WatermeterHistorydata> getWatermeterHistoryByMeterNo(@Param("meterNo") String meterNo, @Param("enprNo") String enprNo,
                                                               @Param("startLine") long startLine, @Param("endLine") long endLine);
+
     BigDecimal getLatestRecordByMeterNo(@Param("meterNo") String meterNo, @Param("enprNo") String enprNo);
 }

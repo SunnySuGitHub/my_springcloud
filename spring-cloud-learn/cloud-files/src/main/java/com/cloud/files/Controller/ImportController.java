@@ -26,17 +26,17 @@ public class ImportController {
     AmmeterImportService ammeterImportService;
 
     @PostMapping("/watermeter")
-    public ResultData watermeterImport(HttpServletRequest request){
+    public ResultData watermeterImport(HttpServletRequest request) {
         return ResponseHandler.doHandle(() -> waterImportService.checkOrRead(request));
     }
 
     @PostMapping("/ammeter")
-    public ResultData ammeterImport(HttpServletRequest request){
+    public ResultData ammeterImport(HttpServletRequest request) {
         return ResponseHandler.doHandle(() -> ammeterImportService.checkOrRead(request));
     }
 
     @GetMapping("txTest")
-    public ResultData txTest(@RequestParam("txId") int txId){
+    public ResultData txTest(@RequestParam("txId") int txId) {
         return ResponseHandler.doHandle(() -> ammeterImportService.test(txId));
     }
 }

@@ -5,44 +5,44 @@
     <!--mapper接口所在包-->
     <insert id="addEnpr" parameterType="com.cloud.setting.Entity.Enpr">
         insert into
-          t_enterprise(
-            enprNo,
-            enpr_name,
-            create_time
-          ) values (
-            #{enprNo},
-            #{enprName},
-            #{createTime}
-          )
+        t_enterprise(
+        enprNo,
+        enpr_name,
+        create_time
+        ) values (
+        #{enprNo},
+        #{enprName},
+        #{createTime}
+        )
     </insert>
 
     <select id="findAll" resultType="com.cloud.setting.Entity.Enpr">
         select
-          *
+        *
         from
-          t_enterprise
+        t_enterprise
     </select>
 
     <select id="findByEnprNo" resultType="com.cloud.setting.Entity.Enpr">
         select
-          *
+        *
         from
-          t_enterprise
+        t_enterprise
         where
-          enprNo = #{enprNo}
+        enprNo = #{enprNo}
     </select>
 
     <update id="uptByEnprNo" parameterType="com.cloud.setting.Entity.Enpr">
         update
-          t_enterprise
+        t_enterprise
         <set>
-            <if test="enprName !=null"> ,enpr_name = #{enprName}</if>
-            <if test="appId !=null"> ,app_id = #{appId}</if>
-            <if test="wxKey !=null"> ,wx_key = #{wxKey}</if>
-            <if test="mchId !=null"> ,mch_id = #{mchId}</if>
+            <if test="enprName !=null">,enpr_name = #{enprName}</if>
+            <if test="appId !=null">,app_id = #{appId}</if>
+            <if test="wxKey !=null">,wx_key = #{wxKey}</if>
+            <if test="mchId !=null">,mch_id = #{mchId}</if>
         </set>
         where
-          enprNo = #{enprNo}
+        enprNo = #{enprNo}
     </update>
 
 </mapper>

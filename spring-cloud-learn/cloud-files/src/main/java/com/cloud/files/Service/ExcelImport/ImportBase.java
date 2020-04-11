@@ -15,7 +15,7 @@ import java.io.InputStream;
  */
 public abstract class ImportBase {
 
-    public ResultData checkOrRead(HttpServletRequest request){
+    public ResultData checkOrRead(HttpServletRequest request) {
         MultipartHttpServletRequest params = ((MultipartHttpServletRequest) request);
         MultipartFile file = params.getFile("file");
         String enprNo = params.getParameter("enprNo");
@@ -32,7 +32,7 @@ public abstract class ImportBase {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        if(check == 1){ //代表检测
+        if (check == 1) { //代表检测
             return check(is, isExcel2003, enprNo, communityId);
         } else {
             return read(is, isExcel2003, enprNo, communityId);
@@ -40,5 +40,6 @@ public abstract class ImportBase {
     }
 
     public abstract ResultData read(InputStream is, boolean isExcel2003, String enprNo, int communityId);
+
     public abstract ResultData check(InputStream is, boolean isExcel2003, String enprNo, int communityId);
 }

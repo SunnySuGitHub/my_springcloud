@@ -17,14 +17,20 @@ public class AmmeterCostService {
     @Resource
     AmmeterCostMapper ammeterCostMapper;
 
-    public ResultData getAmmeterDailyCost(String meterNo, String enprNo, int readType){
+    public ResultData getAmmeterDailyCost(String meterNo, String enprNo, int readType) {
         switch (readType) {
-            case 0: return Result.success(ammeterCostMapper.getAmmeterTotalDailyCost(meterNo, enprNo));
-            case 1: return Result.success(ammeterCostMapper.getAmmeterSharpDailyCost(meterNo, enprNo));
-            case 2: return Result.success(ammeterCostMapper.getAmmeterPeekDailyCost(meterNo, enprNo));
-            case 3: return Result.success(ammeterCostMapper.getAmmeterFlatDailyCost(meterNo, enprNo));
-            case 4: return Result.success(ammeterCostMapper.getAmmeterLowDailyCost(meterNo, enprNo));
-            default: return Result.success(null);
+            case 0:
+                return Result.success(ammeterCostMapper.getAmmeterTotalDailyCost(meterNo, enprNo));
+            case 1:
+                return Result.success(ammeterCostMapper.getAmmeterSharpDailyCost(meterNo, enprNo));
+            case 2:
+                return Result.success(ammeterCostMapper.getAmmeterPeekDailyCost(meterNo, enprNo));
+            case 3:
+                return Result.success(ammeterCostMapper.getAmmeterFlatDailyCost(meterNo, enprNo));
+            case 4:
+                return Result.success(ammeterCostMapper.getAmmeterLowDailyCost(meterNo, enprNo));
+            default:
+                return Result.success(null);
         }
     }
 

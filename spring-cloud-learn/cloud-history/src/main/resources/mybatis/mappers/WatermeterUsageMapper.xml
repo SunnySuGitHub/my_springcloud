@@ -6,33 +6,33 @@
 
     <select id="getWatemeterDailyUsage" resultType="com.cloud.history.Entity.VO.MeterDailyUsage">
         select
-          watermeter_usage as daily_use,
-          read_date as dateline,
-          0 as meter_type
+        watermeter_usage as daily_use,
+        read_date as dateline,
+        0 as meter_type
         from
-          t_watermeter_usage
+        t_watermeter_usage
         where
-          watermeter_no = #{meterNo}
-          and enprNo = #{enprNo}
+        watermeter_no = #{meterNo}
+        and enprNo = #{enprNo}
     </select>
 
     <select id="getCommunityUsage" resultType="java.math.BigDecimal">
         select
-          sum(watermeter_usage) as total_usage
+        sum(watermeter_usage) as total_usage
         from
-          t_watermeter_usage
+        t_watermeter_usage
         where
-          watermeter_no in (
-            select
-              meter_no
-            from
-              t_watermeter
-            where
-              c_id = #{cid}
-              and is_delete = 0
-          )
-          and enprNo = #{enprNo}
-          <![CDATA[
+        watermeter_no in (
+        select
+        meter_no
+        from
+        t_watermeter
+        where
+        c_id = #{cid}
+        and is_delete = 0
+        )
+        and enprNo = #{enprNo}
+        <![CDATA[
             and read_ts >= #{startLine}
             and read_ts <= #{endLine}
           ]]>
@@ -40,21 +40,21 @@
 
     <insert id="save" parameterType="com.cloud.history.Entity.Watermeters.WatermeterUsage">
         insert into
-          t_watermeter_usage(
-            watermeter_no,
-            watermeter_usage,
-            read_date,
-            read_ts,
-            read_value,
-            enprNo
-          ) values (
-            #{watermeterNo},
-            #{watermeterUsaga},
-            #{readDate},
-            #{readTs},
-            #{readValue},
-            #{enprNo}
-          )
+        t_watermeter_usage(
+        watermeter_no,
+        watermeter_usage,
+        read_date,
+        read_ts,
+        read_value,
+        enprNo
+        ) values (
+        #{watermeterNo},
+        #{watermeterUsaga},
+        #{readDate},
+        #{readTs},
+        #{readValue},
+        #{enprNo}
+        )
     </insert>
 
 </mapper>

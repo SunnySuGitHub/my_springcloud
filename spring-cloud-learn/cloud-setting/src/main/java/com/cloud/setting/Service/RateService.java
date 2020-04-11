@@ -18,7 +18,7 @@ public class RateService {
     @Resource
     AmmeterRateMapper rateMapper;
 
-    public ResultData getRateList(String enprNo){
+    public ResultData getRateList(String enprNo) {
         return Result.success(rateMapper.getRateList(enprNo));
     }
 

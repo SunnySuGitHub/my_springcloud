@@ -116,9 +116,9 @@ public class TimeUtils {
     }
 
     public static String getYesterday() {
-        Calendar calendar=Calendar.getInstance();
-        calendar.set(Calendar.HOUR_OF_DAY,-24);
-        String yesterdayDate=dateFormat.format(calendar.getTime());
+        Calendar calendar = Calendar.getInstance();
+        calendar.set(Calendar.HOUR_OF_DAY, -24);
+        String yesterdayDate = dateFormat.format(calendar.getTime());
         return yesterdayDate;
     }
 
@@ -262,7 +262,7 @@ public class TimeUtils {
         endCalendar.set(13, 0);
         endCalendar.set(14, 0);
         long millSecDiff = endCalendar.getTimeInMillis() - startCalendar.getTimeInMillis();
-        int dayDiff = Math.round((float)(millSecDiff / 86400000L));
+        int dayDiff = Math.round((float) (millSecDiff / 86400000L));
         return dayDiff;
     }
 
@@ -310,7 +310,7 @@ public class TimeUtils {
     }
 
     public static long getAddHourNum(int amount) {
-        return getNowHourNum() + (long)amount;
+        return getNowHourNum() + (long) amount;
     }
 
     public static long getNowMinuteMun() {
@@ -320,13 +320,13 @@ public class TimeUtils {
     public static Date[] addDaysForArray(Date date, int... amount) {
         List<Date> result = new ArrayList();
 
-        for(int i = 0; i < amount.length; ++i) {
+        for (int i = 0; i < amount.length; ++i) {
             Calendar c = getCalendar(date);
             c.add(6, amount[i]);
             result.add(c.getTime());
         }
 
-        return (Date[])result.toArray(new Date[0]);
+        return (Date[]) result.toArray(new Date[0]);
     }
 
     public static boolean isEndOfMonth(Date date) {

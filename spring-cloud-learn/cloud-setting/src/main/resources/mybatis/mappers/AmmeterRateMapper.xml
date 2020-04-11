@@ -6,28 +6,28 @@
 
     <select id="getRates" resultType="com.cloud.setting.Entity.AmmeterRate">
         select
-          *
+        *
         from
-          t_ammeter_rate
+        t_ammeter_rate
         where
-          enprNo = #{enprNo}
+        enprNo = #{enprNo}
     </select>
 
     <select id="getRateList" resultType="com.cloud.setting.Entity.AmmeterRate">
         select
-          *
+        *
         from
-          t_ammeter_rate
+        t_ammeter_rate
         where
-          enprNo = #{enprNo}
+        enprNo = #{enprNo}
     </select>
 
     <update id="updateRate" parameterType="com.cloud.setting.Entity.AmmeterRate">
         update
         t_ammeter_rate
         <set>
-            <if test="ratePrice !=null"> ,rate_price = #{ratePrice}</if>
-            <if test="rateTime !=null"> ,rate_time = #{rateTime}</if>
+            <if test="ratePrice !=null">,rate_price = #{ratePrice}</if>
+            <if test="rateTime !=null">,rate_time = #{rateTime}</if>
         </set>
         where
         rate_type = #{rateType}

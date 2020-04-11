@@ -22,19 +22,19 @@ public class ExcelImportUtil {
 
 
     //判断是否2003
-    public static boolean isExcel2003(String filePath){
-        if(filePath.endsWith("xls")){
+    public static boolean isExcel2003(String filePath) {
+        if (filePath.endsWith("xls")) {
             return true;
-        }else {
+        } else {
             return false;
         }
     }
 
     //判断是否03以上
-    public static boolean isExcel2007(String filePath){
-        if(filePath.endsWith("xlsx")){
+    public static boolean isExcel2007(String filePath) {
+        if (filePath.endsWith("xlsx")) {
             return true;
-        }else {
+        } else {
             return false;
         }
     }
@@ -43,19 +43,19 @@ public class ExcelImportUtil {
         Object[] obs = new Object[2];
         Workbook workbook = null;
         String[] blockName;
-        try{
-            if(isExcel2003){
+        try {
+            if (isExcel2003) {
                 workbook = new HSSFWorkbook(is);
             } else {
                 workbook = new XSSFWorkbook(is);
             }
-        }catch (Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
         }
-        List<List<String >>[] res =  new ArrayList[workbook.getNumberOfSheets()];//双层list加一个数组，[i]代表一个双层List，代表一个sheet的所有数据
+        List<List<String>>[] res = new ArrayList[workbook.getNumberOfSheets()];//双层list加一个数组，[i]代表一个双层List，代表一个sheet的所有数据
         blockName = new String[workbook.getNumberOfSheets()];
-        for(int i = 0 ; i  < workbook.getNumberOfSheets(); i++){
-            res[i] = read(workbook , i);
+        for (int i = 0; i < workbook.getNumberOfSheets(); i++) {
+            res[i] = read(workbook, i);
             blockName[i] = workbook.getSheetName(i);
         }
         obs[0] = res;
@@ -63,7 +63,7 @@ public class ExcelImportUtil {
         return obs;
     }
 
-    public static List<List<String>> read(Workbook workbook, int i){
+    public static List<List<String>> read(Workbook workbook, int i) {
         int totalRows = 0;
         int totalCells = 0;
         //获取当前workbook第i个sheet的所有数据
@@ -74,25 +74,25 @@ public class ExcelImportUtil {
         //得到当前表的行数
         totalRows = sheet.getPhysicalNumberOfRows();
         //得到当前表的列数
-        if(totalRows>0 && sheet.getRow(0)!=null){
+        if (totalRows > 0 && sheet.getRow(0) != null) {
             totalCells = sheet.getRow(1).getPhysicalNumberOfCells();
         }
         //两个for循环遍历每一行的每一个Cell
-        for(int r = 0;r < sheet.getPhysicalNumberOfRows();r++){
+        for (int r = 0; r < sheet.getPhysicalNumberOfRows(); r++) {
             Row row = sheet.getRow(r);
-            if(row == null){
+            if (row == null) {
                 continue;
             }
             List<String> rowList = new ArrayList<>();
-            for(int c = 0;c<totalCells;c++){
+            for (int c = 0; c < totalCells; c++) {
                 Cell cell = row.getCell(c);
                 String cellValue = null;
-                if(cell != null){
+                if (cell != null) {
                     //判断读取的数据类型
                     switch (cell.getCellType()) {
                         case XSSFCell.CELL_TYPE_NUMERIC:
                             if (DateUtil.isCellDateFormatted(cell)) {
-                                cellValue = cell.getDateCellValue().getTime()/1000 + ""; //日期型
+                                cellValue = cell.getDateCellValue().getTime() / 1000 + ""; //日期型
                             } else {
                                 cellValue = df.format(cell.getNumericCellValue()); //数字型
                             }

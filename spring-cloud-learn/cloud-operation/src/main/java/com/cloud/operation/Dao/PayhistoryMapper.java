@@ -13,9 +13,14 @@ import java.util.List;
 @Repository
 public interface PayhistoryMapper {
     int save(Payhistory payhistory);
+
     int update(Payhistory payhistory);
+
     Payhistory findById(@Param("id") int id);
+
     List<Payhistory> getPayHistory(@Param("enprNo") String enprNo, @Param("startLine") long startLine, @Param("endLine") long endLine);
+
     List<Payhistory> getOperatorPayHistory(@Param("operatorId") int operatorId, @Param("startLine") long startLine, @Param("endLine") long endLine);
+
     List<Payhistory> getUserPayHistory(@Param("uId") int uId, @Param("startLine") long startLine, @Param("endLine") long endLine);
 }

@@ -18,23 +18,23 @@ public class CommunityService {
     @Resource
     CommunityMapper communityMapper;
 
-    public ResultData getCommunity(int id){
+    public ResultData getCommunity(int id) {
         return Result.success(communityMapper.getCommunity(id));
     }
 
-    public ResultData addCommunity(Community community){
+    public ResultData addCommunity(Community community) {
         return Result.success(communityMapper.addCommunity(community));
     }
 
-    public ResultData uptCommunity(Community community){
+    public ResultData uptCommunity(Community community) {
         return Result.success(communityMapper.uptCommunity(community));
     }
 
-    public ResultData delCommunity(int id){
+    public ResultData delCommunity(int id) {
         return Result.success(communityMapper.delCommunity(id));
     }
 
-    public ResultData communityList(String enprNo){
+    public ResultData communityList(String enprNo) {
         return Result.success(communityMapper.communityList(enprNo));
     }
 

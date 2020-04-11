@@ -5,23 +5,23 @@
     <!--mapper接口所在包-->
     <select id="getSingleLadder" resultType="com.cloud.setting.Entity.LadderedElecprice">
         select
-          *
+        *
         from
-          t_laddered_elecprice
+        t_laddered_elecprice
         where
-          cost_type = #{costType}
-          and voltageType = #{voltageType}
-          and enprNo = #{enprNo}
+        cost_type = #{costType}
+        and voltageType = #{voltageType}
+        and enprNo = #{enprNo}
     </select>
 
     <select id="getPriceList" resultType="com.cloud.setting.Entity.LadderedElecprice">
         select
-          *
+        *
         from
-          t_laddered_elecprice
+        t_laddered_elecprice
         where
-          voltageType = #{voltageType}
-          and enprNo = #{enprNo}
+        voltageType = #{voltageType}
+        and enprNo = #{enprNo}
     </select>
 
 </mapper>

@@ -27,12 +27,12 @@ public class PayService {
 
     @Transactional
     public ResultData paySave(Payhistory payhistory) {
-        payhistory.setPayTime(System.currentTimeMillis()/1000);
+        payhistory.setPayTime(System.currentTimeMillis() / 1000);
         payhistory.setPayStatus(Constants.PAY_FAILED);
         int id = payhistoryMapper.save(payhistory);
         User user = userMapper.findByUid(payhistory.getuId());
         user.setAccountBalance(user.getAccountBalance().add(payhistory.getPayAmount()));
-        if(userMapper.uptUser(user) == 1) {
+        if (userMapper.uptUser(user) == 1) {
             Payhistory justNow = payhistoryMapper.findById(id);
             justNow.setPayStatus(Constants.PAY_SUCCEES);
             return Result.success(payhistoryMapper.update(justNow));
@@ -52,7 +52,6 @@ public class PayService {
     public ResultData getUserPayHistory(int uId, long startLine, long endLine) {
         return Result.success(payhistoryMapper.getUserPayHistory(uId, startLine, endLine));
     }
-
 
 
 }

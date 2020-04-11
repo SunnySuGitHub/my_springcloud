@@ -26,8 +26,8 @@ public class EnprService {
     @Resource
     OperatorMapper operatorMapper;
 
-    public ResultData addEnpr(Enpr enpr){
-        enpr.setCreateTime(System.currentTimeMillis()/1000);
+    public ResultData addEnpr(Enpr enpr) {
+        enpr.setCreateTime(System.currentTimeMillis() / 1000);
         int i = enprMapper.addEnpr(enpr);
         Operator operator = new Operator();
         operator.setAccount(enpr.getEnprNo() + "Admin");
@@ -35,14 +35,14 @@ public class EnprService {
         operator.setEnprNo(enpr.getEnprNo());
         operator.setOperatorType(ENPR_OPERATOR);
         int j = operatorMapper.addOperator(operator);
-        if((i==j) && (i==1)){
+        if ((i == j) && (i == 1)) {
             return Result.success(1);
         } else {
             return Result.error(HttpStatus.INTERNAL_SERVER_ERROR, "创建失败");
         }
     }
 
-    public ResultData findAll(){
+    public ResultData findAll() {
         return Result.success(enprMapper.findAll());
     }
 

@@ -19,18 +19,18 @@ public class ScheduleUtils {
     /**
      * 根据方法反射和cron构建TriggerTask
      */
-    public static TriggerTask getTriggerTask(String methodName, String cron) throws Exception{
+    public static TriggerTask getTriggerTask(String methodName, String cron) throws Exception {
         TriggerTask triggerTask = new TriggerTask(() -> {
             try {
                 Class clazz = Class.forName("com.cloud.task.ScheduledJob.DynamicSchedule.Jobs");
                 Object object = clazz.newInstance();
                 Method method = clazz.getMethod(methodName);
-                method.invoke(object,null);
-            }catch (Exception e){
+                method.invoke(object, null);
+            } catch (Exception e) {
                 logger.error(e.getMessage());
             }
         }, (TriggerContext triggerContext) -> {
-            CronTrigger trigger=new CronTrigger(cron);
+            CronTrigger trigger = new CronTrigger(cron);
             return trigger.nextExecutionTime(triggerContext);
         });
         return triggerTask;

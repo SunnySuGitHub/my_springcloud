@@ -6,65 +6,65 @@
 
     <select id="findByBlockNameAndCid" resultType="com.cloud.area.Entity.Block">
         select
-          b_id,
-          b_name,
-          c_id
+        b_id,
+        b_name,
+        c_id
         from
-          t_block
+        t_block
         where
-          b_name = #{blockName}
-          and c_id = #{cId}
+        b_name = #{blockName}
+        and c_id = #{cId}
     </select>
 
     <insert id="saveBlock" parameterType="com.cloud.area.Entity.Block" useGeneratedKeys="true" keyProperty="bId">
         insert into
-          t_block(
-            b_name,
-            c_id
-          ) values (
-            #{bName},
-            #{cId}
+        t_block(
+        b_name,
+        c_id
+        ) values (
+        #{bName},
+        #{cId}
         )
     </insert>
 
     <select id="findAllByCid" resultType="com.cloud.area.Entity.Block">
         select
-          *
+        *
         from
-          t_block
+        t_block
         where
-          c_id = #{cid}
-          and is_delete = 0
+        c_id = #{cid}
+        and is_delete = 0
     </select>
 
     <select id="getBlock" resultType="com.cloud.area.Entity.Block">
         select
-          *
+        *
         from
-          t_block
+        t_block
         where
-          b_id = #{bid}
-          and is_delete = 0
+        b_id = #{bid}
+        and is_delete = 0
     </select>
 
     <update id="delBlock" parameterType="java.lang.Integer">
         update
-          t_block
+        t_block
         set
-          is_delete = 1
+        is_delete = 1
         where
-          b_id = #{bid}
+        b_id = #{bid}
     </update>
 
     <update id="uptBlock" parameterType="com.cloud.area.Entity.Block">
         update
-          t_block
+        t_block
         <set>
-            <if test="bName !=null"> ,b_name = #{bName}</if>
-            <if test="cId !=null"> ,c_id = #{cId}</if>
+            <if test="bName !=null">,b_name = #{bName}</if>
+            <if test="cId !=null">,c_id = #{cId}</if>
         </set>
         where
-          b_id = #{bId}
+        b_id = #{bId}
     </update>
 
 </mapper>

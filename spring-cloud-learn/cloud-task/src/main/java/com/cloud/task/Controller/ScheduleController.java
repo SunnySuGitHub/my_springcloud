@@ -25,11 +25,12 @@ public class ScheduleController {
 
     /**
      * 添加新的定时任务
+     *
      * @param param 参数都存在数据库，到时候从数据库获取
-     *        centerId   集中器ID
-     *        cron       执行时间
-     *        path       待执行的方法所在类
-     *        method     方法名
+     *              centerId   集中器ID
+     *              cron       执行时间
+     *              path       待执行的方法所在类
+     *              method     方法名
      */
     @PostMapping("/add")
     @ResponseBody
@@ -41,10 +42,10 @@ public class ScheduleController {
             logger.warn("empty string");
         }
         try {
-            TriggerTask triggerTask = ScheduleUtils.getTriggerTask(methodName,cron);
-            handler.addTriggerTask(taskId,triggerTask);
-        }catch (Exception e){
-            logger.error("添加定时任务异常：{}",e);
+            TriggerTask triggerTask = ScheduleUtils.getTriggerTask(methodName, cron);
+            handler.addTriggerTask(taskId, triggerTask);
+        } catch (Exception e) {
+            logger.error("添加定时任务异常：{}", e);
         }
     }
 
@@ -60,10 +61,10 @@ public class ScheduleController {
             logger.warn("empty string");
         }
         try {
-            TriggerTask triggerTask = ScheduleUtils.getTriggerTask(methodName,cron);
+            TriggerTask triggerTask = ScheduleUtils.getTriggerTask(methodName, cron);
             handler.resetTriggerTask(taskId, triggerTask);
-        }catch (Exception e){
-            logger.error("修改定时任务异常：{}",e);
+        } catch (Exception e) {
+            logger.error("修改定时任务异常：{}", e);
         }
     }
 

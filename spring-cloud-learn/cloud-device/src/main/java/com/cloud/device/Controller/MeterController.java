@@ -58,7 +58,6 @@ public class MeterController {
     }
 
 
-
     /**
      * 根据表编号和公司编码查看表计信息
      * 0为水表  1为电表
@@ -104,7 +103,7 @@ public class MeterController {
      * 0为水表  1为电表
      */
     @GetMapping("/GetMeterDetailByUid")
-    public ResultData getMeterDetailByUsernameAndEnprNo(@RequestParam(value = "uId", defaultValue = "1") int uid,
+    public ResultData getMeterDetailByUIdAndMeterType(@RequestParam(value = "uId", defaultValue = "1") int uid,
                                                         @RequestParam(value = "meterType", defaultValue = "1") int meterType) {
         if (meterType == Constants.TYPE_WATERMETER) {
             return ResponseHandler.doHandle(() -> waterMeterService.getWatermeterByUid(uid));

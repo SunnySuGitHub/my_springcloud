@@ -13,9 +13,14 @@ import java.util.List;
 @Repository
 public interface BlockMapper {
     Block findByBlockNameAndCid(@Param("blockName") String blockName, @Param("cId") int communityId);
+
     int saveBlock(Block block);
+
     List<Block> findAllByCid(@Param("cid") int cid);
+
     Block getBlock(@Param("bid") int bid);
+
     int delBlock(@Param("bid") int bid);
+
     int uptBlock(Block block);
 }

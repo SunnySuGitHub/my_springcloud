@@ -27,11 +27,11 @@ public class CenterService {
     AmmeterMapper ammeterMapper;
 
     public ResultData addCenter(Center center) {
-        center.setCreateTime(System.currentTimeMillis()/1000);
+        center.setCreateTime(System.currentTimeMillis() / 1000);
         return Result.success(centerMapper.save(center));
     }
 
-    public ResultData delCenter(int id){
+    public ResultData delCenter(int id) {
         return Result.success(centerMapper.delete(id));
     }
 

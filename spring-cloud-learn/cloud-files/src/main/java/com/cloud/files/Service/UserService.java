@@ -32,27 +32,27 @@ public class UserService {
     @Autowired
     JedisUtil jedisUtil;
 
-    public ResultData findByUserId(int uid, String enprNo){
-        if(jedisUtil.hGet(enprNo, "Uid"+uid) == null) {
+    public ResultData findByUserId(int uid, String enprNo) {
+        if (jedisUtil.hGet(enprNo, "Uid" + uid) == null) {
             User user = userMapper.findByUid(uid);
-            jedisUtil.hSet(enprNo, "Uid"+uid, JSON.toJSONString(user));
+            jedisUtil.hSet(enprNo, "Uid" + uid, JSON.toJSONString(user));
             return Result.success(user);
         } else {
-            User user = JSON.parseObject(jedisUtil.hGet(enprNo, "Uid"+uid), User.class);
+            User user = JSON.parseObject(jedisUtil.hGet(enprNo, "Uid" + uid), User.class);
             return Result.success(user);
         }
     }
 
-    public ResultData delUserById(int uid, String enprNo){
-        jedisUtil.hDel(enprNo, "Uid"+uid);
-        jedisUtil.hDel(enprNo, "UserInfoUid"+uid);
+    public ResultData delUserById(int uid, String enprNo) {
+        jedisUtil.hDel(enprNo, "Uid" + uid);
+        jedisUtil.hDel(enprNo, "UserInfoUid" + uid);
         return Result.success(userMapper.delUserByUid(uid));
     }
 
-    public ResultData uptUser(User user){
+    public ResultData uptUser(User user) {
         String enprNo = user.getEnprNo();
-        jedisUtil.hDel(enprNo, "Uid"+user.getuId());
-        jedisUtil.hDel(enprNo, "UserInfoUid"+user.getuId());
+        jedisUtil.hDel(enprNo, "Uid" + user.getuId());
+        jedisUtil.hDel(enprNo, "UserInfoUid" + user.getuId());
         return Result.success(userMapper.uptUser(user));
     }
 

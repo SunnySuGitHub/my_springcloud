@@ -7,15 +7,15 @@
     <select id="getWatermeterHistoryByMeterNo"
             resultType="com.cloud.history.Entity.Watermeters.WatermeterHistorydata">
         select
-            meter_no,
-            read_value,
-            read_time,
-            enprNo
+        meter_no,
+        read_value,
+        read_time,
+        enprNo
         from
-          t_watermeter_historydata
+        t_watermeter_historydata
         where
-            meter_no = #{ammeterNo}
-            and enprNo = #{enprNo}
+        meter_no = #{ammeterNo}
+        and enprNo = #{enprNo}
         <if test="startLine !=-1">
             <![CDATA[
             and read_time >= #{startLine}
@@ -30,14 +30,14 @@
 
     <select id="getLatestRecordByMeterNo" resultType="java.math.BigDecimal">
         select
-          read_value
+        read_value
         from
-          t_watermeter_historydata
+        t_watermeter_historydata
         where
-          meter_no = #{ammeterNo}
-          and enprNo = #{enprNo}
+        meter_no = #{ammeterNo}
+        and enprNo = #{enprNo}
         order by
-          id desc
+        id desc
         limit 1
     </select>
 

@@ -25,15 +25,15 @@ public class NoticeService {
     @Autowired
     JedisUtil jedisUtil;
 
-    public ResultData addNotice(Notice notice){
-        notice.setPublishTime(System.currentTimeMillis()/1000);
+    public ResultData addNotice(Notice notice) {
+        notice.setPublishTime(System.currentTimeMillis() / 1000);
         String enprNo = notice.getEnprNo();
         jedisUtil.hDel(enprNo, "NoticeList");
         return Result.success(noticeMapper.addNotice(notice));
     }
 
-    public ResultData noticeList(String enprNo){
-        if(jedisUtil.hGet(enprNo, "NoticeList") == null) {
+    public ResultData noticeList(String enprNo) {
+        if (jedisUtil.hGet(enprNo, "NoticeList") == null) {
             List<Notice> noticeList = noticeMapper.noticeList(enprNo);
             jedisUtil.hSet(enprNo, "NoticeList", JSONArray.toJSONString(noticeList));
             return Result.success(noticeList);
@@ -43,13 +43,13 @@ public class NoticeService {
         }
     }
 
-    public ResultData uptNotice(Notice notice){
+    public ResultData uptNotice(Notice notice) {
         String enprNo = notice.getEnprNo();
         jedisUtil.hDel(enprNo, "NoticeList");
         return Result.success(noticeMapper.uptNotice(notice));
     }
 
-    public ResultData delNotice(int id, String enprNo){
+    public ResultData delNotice(int id, String enprNo) {
         jedisUtil.hDel(enprNo, "NoticeList");
         return Result.success(noticeMapper.delNotice(id));
     }

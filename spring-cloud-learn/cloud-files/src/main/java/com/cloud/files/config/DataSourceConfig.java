@@ -22,7 +22,7 @@ public class DataSourceConfig {
         return getDataSource("jdbc:mysql://localhost:3306/db_common?useSSL=false&serverTimezone=GMT%2B8", "root", "19960731");
     }
 
-    private DataSource getDataSource(String url, String username, String password){
+    private DataSource getDataSource(String url, String username, String password) {
         BasicDataSource dataSource = new BasicDataSource();
         dataSource.setUrl(url);
         dataSource.setUsername(username);
